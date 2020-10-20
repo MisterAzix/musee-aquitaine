@@ -1,0 +1,28 @@
+/*==================== TOOLBAR ====================*/
+
+.toolbar-nav {
+    z-index: 1;
+    top: 30%;
+    right: 0px;
+    display: block;
+    position: fixed;
+    width: 54px;
+    height: 224px;
+    background: #002944;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0px 11px;
+}
+
+.toolbar-nav img {
+    display: block;
+    width: 32px;
+    margin: 12px 0px;
+}
+
+.toolbar-nav div {
+    height: 2px;
+    width: 32px;
+    background: #707070;
+}
