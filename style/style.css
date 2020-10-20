@@ -86,6 +86,11 @@ body {
     overflow: hidden;
 }
 
+.exposition h3 {
+    color: #A32F2F;
+    margin-top: 25px;
+}
+
 .top-weel {
     position: absolute;
     top: -300px;
@@ -115,10 +120,13 @@ body {
 }
 
 .exposition-section-1 {
+    margin: 100px 150px;
+}
+
+.section-flex-start, .exposition-section-1 h3 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 100px 150px;
 }
 
 .exposition-section-1 img {
@@ -134,10 +142,13 @@ body {
 }
 
 .exposition-section-2 {
+    margin: 100px 150px;
+}
+
+.section-flex-end, .exposition-section-2 h3 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 100px 150px;
 }
 
 .exposition-section-2 img {
@@ -151,7 +162,6 @@ body {
     display: block;
     width: 380px;
 }
-
 
 
 /*==================== SECTION 2 ====================*/
