@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html>
+        
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="style\TestToolbarStyle.css">
+        </head>
+
+    <body>
+
+        <div id="billetterie" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="fermerNav()">&times;</a>
+
+        </div>
+
+        <div id="informations" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="fermerNav()">&times;</a>
+
+            <h2 style="text-align: center">CONTACT</h2>
+
+            <h3>TÉLÉPHONE</h3>
+
+            <p>MUSÉE - 05 56 01 51 00</p>
+
+            <p>ACCUEIL DE GROUPE - 05 56 01 51 04</p>
+            <p>ACCESSIBILITÉ - 05 56 01 51 03</p>
+            <p>VILLE DE BORDEAUX - 05 56 10 20 30</p>
+
+            <h3>MAILS</h3>
+
+            <p>musaq@mairie-bordeaux.fr</p>
+            <p>service.mediation.aquitaine@mairie-bordeaux.fr</p>
+            <p>service.accueil@mairie-bordeaux.fr</p>
+
+            <h3>PLAN DE BORDEAUX</h3>
+            
+            <img src="img\plan\Carte.png" 
+            alt="Carte de Bordeaux avec en son centre le Musée d'Aquitaine";
+            height="290"
+            width="500">
+        
+        </div>
+
+        <div id="agenda" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="fermerNav()">&times;</a>
+        </div>
+
+        <div id="recherche" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="fermerNav()">&times;</a>
+        </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="ouvrirBilleterie()">Billetterie</span>
+    <span style="font-size:30px;cursor:pointer" onclick="ouvrirInformations()">Informations</span>
+    <span style="font-size:30px;cursor:pointer" onclick="ouvrirAgenda()">Agenda</span>
+    <span style="font-size:30px;cursor:pointer" onclick="ouvrirRecherche()">Recherche</span>
+
+        <script>
+            function ouvrirBilleterie() {
+            document.getElementById("billetterie").style.width = "500px";
+            }
+            function ouvrirInformations() {
+            document.getElementById("informations").style.width = "500px";
+            }
+            function ouvrirAgenda() {
+            document.getElementById("agenda").style.width = "500px";
+            }
+            function ouvrirRecherche() {
+            document.getElementById("recherche").style.width = "500px";
+            }
+
+            function fermerNav() {
+                document.getElementById("billetterie").style.width = "0px";
+                document.getElementById("informations").style.width = "0px";
+                document.getElementById("agenda").style.width = "0px";
+                document.getElementById("recherche").style.width = "0px";
+            }
+            
+        </script>
+    
+    </body>
+</html> 
