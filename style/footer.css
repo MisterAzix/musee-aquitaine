@@ -18,6 +18,7 @@ footer a:link, footer a:active, footer a:visited {
 }
 
 .footer-top-section {
+    display: flex;
     height: 85%;
 }
 
@@ -73,10 +74,7 @@ footer a:link, footer a:active, footer a:visited {
     width: 24%;
     height: 100%;
     color: #ffffff;
-    font-size: 1.5em;  
-}
-
-.footer-left-box {
+    font-size: 1.5em;
     padding: 35px 85px;
 }
 
@@ -102,13 +100,40 @@ footer a:link, footer a:active, footer a:visited {
 
 /*========== Right ==========*/
 
+.footer-right-box {
+    height: 100%;
+    width: 76%;
+    padding: 60px 100px;
+}
 
 .footer-right-box h4 {
     font-size: 1.5em;
     color: #000000;
-    margin-top: -554px;
-    margin-left: 575px;
+    margin-right: 15%;
+    white-space: nowrap;
 }
-    
 
+.social-network {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.social-network-icon {
+    background: #C9C8C8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.social-network a {
+    display: flex;
+    align-items: center;
+    margin: 10px 35px;
+}
+
+.social-network img {
+    width: 30px;
+    height: auto;
+}
