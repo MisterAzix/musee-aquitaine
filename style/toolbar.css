@@ -34,15 +34,20 @@
 /*==================== XXXXXXX ====================*/
 
 
+
 /*Style de la croix pour fermer la sidenav*/
   .sidenav a {
+    font-family: 'Montserrat', sans-serif;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 16px;
+    font-weight: bold;
     color: #002944;
     display: block;
     transition: 0.3s;
+    white-space: nowrap;
   }
+
 /*Style de la croix survolé*/
   .sidenav a:hover {
     color: #759fbc;
@@ -61,7 +66,7 @@
     transition: 0.5s;
     padding-top: 60px;
   }
-
+  
 /*Style des grands titres(h2) de la sidenav*/
   .sidenav h2 {
     font-family: 'Playfair Display', serif;
@@ -107,7 +112,25 @@
     margin-left: 50px;
   }
   
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+
+/*==================== Search Bar ====================*/
+
+
+  input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 0px 12px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 100%;
   }
