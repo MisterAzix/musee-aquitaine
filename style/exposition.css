@@ -65,6 +65,7 @@ h2 {
     width: 100%;
     height: auto;
     padding: 50px 0px;
+    overflow: hidden;
 }
 /*============= section 1 ==============*/
 
@@ -180,5 +181,3 @@ h2 {
 
 
 /*========= section 2 ==========*/
-
-footer
