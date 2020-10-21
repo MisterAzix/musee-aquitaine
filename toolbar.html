@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toolbar</title>
     <link rel="stylesheet" href="style/toolbar.css">
 </head>
+
 <body>
+
     <nav class="toolbar-nav">
         <a href="#Ticket"><img src="img/icon/ticket_icon.png" alt="Billetterie" style="cursor:pointer" onclick="ouvrirBilleterie()"></a>
         <div class="spliter"></div>
@@ -29,12 +32,12 @@
         </div>
 
 
-        <!--Sidenav des informations -->
-        <div id="informations" class="sidenav"> 
+    <!--Sidenav des informations -->
+    <div id="informations" class="sidenav"> 
 
         <!--Script qui permet de ferme la sidenav-->
         <a href="javascript:void(0)" class="closebtn" onclick="fermerNav()">&times;</a>
-            
+        
         <h2 style="text-align: center">CONTACT</h2>
 
         <h3>TÉLÉPHONE</h3>
@@ -54,8 +57,8 @@
         <h3>PLAN DE BORDEAUX</h3>
             
         <!--Plan de Bordeaux avec au centre le Musée d'Aquitaine-->
-        <img src="img/plan/Carte.png" 
-        alt="Carte de Bordeaux avec en son centre le Musée d'Aquitaine"
+        <img src="img\plan\Carte.png" 
+        alt="Carte de Bordeaux avec en son centre le Musée d'Aquitaine";
         height="290"
         width="500">
         
@@ -65,12 +68,32 @@
     <!--Sidenav de la barre de l'agenda-->
     <div id="agenda" class="sidenav"> 
 
-        <h2 style="text-align: center">AGENDA</h2>
+            <!--Script qui permet de ferme la sidenav-->
+            <a href="javascript:void(0)" class="closebtn" onclick="fermerNav()">&times;</a>
 
-        <!--Script qui permet de ferme la sidenav-->
-        <a href="javascript:void(0)" class="closebtn" onclick="fermerNav()">&times;</a>
+            <h2 style="text-align: center">AGENDA</h2>
+
+            <img src="img\section\visite_familiale.jpg"
+            height="175"
+            width="500"> 
+
+            <p style="font-weight: bold">Visite commentée - exposition "Comme une image"</p>
             
-    </div>
+            <img src="img\section\bones.jpg"
+            height="175"
+            width="500"> 
+
+            <p style="font-weight: bold">Visite commentée - exposition "Comme une image"</p>
+            <br>
+            
+            <br>
+            <br>
+            <p>Les audioguides sont temporairement indisponibles.</p>
+            <p>L'application "Musée d'Aquitaine" disponible sur Android</p>
+            <br>
+            <a href="https://play.google.com/store/apps/details?id=fr.mbdx.maq" target="_blank">&rarr; Google Play</a>
+
+        </div>
 
 
     <!--Sidenav de la barre de recherche-->
@@ -81,8 +104,8 @@
             
         <h2 style="text-align: center">RECHERCHE</h2>
 
-        <input type="search" id="site-search" name="q" aria-label="Search through site content">
-        <button>Recherchez</button>
+            <input type="search" id="site-search" name="q" aria-label="Rechercher un article/une page du site">
+            <button>Rechercher</button>
 
     </div>
     
