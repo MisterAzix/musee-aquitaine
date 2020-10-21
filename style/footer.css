@@ -7,6 +7,7 @@
 footer {
     background: #F8F8F8;
     height: 75vh;
+    width: 100%;
     margin-top: 25vh;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
@@ -24,12 +25,22 @@ footer a:link, footer a:active, footer a:visited {
     background: #A93333;
     width: 25%;
     height: 100%;
+    color: #ffffff;
+    font-size: 1.5em;
+    
+}
+
+/*========== BOTTOM ==========*/
+.footer-bottom-section {
+    background: #DCDCDC;
+    height: 15%;
+    padding: 1% 1%;
 }
 
 .footer-bottom-section {
     background: #DCDCDC;
     height: 15%;
-    padding: 30px 4%;
+    padding: 1% 0%;
 }
 
 .footer-bottom-section div div {
@@ -58,3 +69,22 @@ footer a:link, footer a:active, footer a:visited {
     height: 2px;
     width: 10px;
 }
+
+
+/*========== Left ==========*/
+.footer-left-box {
+    padding: 35px 50px;
+}
+
+.footer-left-box h4 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.footer-left-box p {
+    margin-top: 70px;
+    font-size: 1.2em;
+}
+
+
+

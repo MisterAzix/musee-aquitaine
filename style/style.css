@@ -59,6 +59,22 @@ body {
 
 
 
+/*==================== BUTTON ====================*/
+
+.more-info {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: 50px auto;
+    font-weight: bold;
+    background: #151744;
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+}
+
 /*==================== SECTION 1 ====================*/
 
 .exposition {
@@ -68,6 +84,11 @@ body {
     height: 1400px;
     color: #707070;
     overflow: hidden;
+}
+
+.exposition h3 {
+    color: #A32F2F;
+    margin-top: 25px;
 }
 
 .top-weel {
@@ -99,10 +120,13 @@ body {
 }
 
 .exposition-section-1 {
+    margin: 100px 150px;
+}
+
+.section-flex-start, .exposition-section-1 h3 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 100px 150px;
 }
 
 .exposition-section-1 img {
@@ -118,10 +142,13 @@ body {
 }
 
 .exposition-section-2 {
+    margin: 100px 150px;
+}
+
+.section-flex-end, .exposition-section-2 h3 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 100px 150px;
 }
 
 .exposition-section-2 img {
@@ -135,7 +162,6 @@ body {
     display: block;
     width: 380px;
 }
-
 
 
 /*==================== SECTION 2 ====================*/

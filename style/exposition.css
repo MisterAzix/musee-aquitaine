@@ -1,0 +1,132 @@
+body{
+    background-color: #FFF8F3;
+    }
+h1 {
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Dubai', sans-serif;
+    color: #A32F2F;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #A32F2F;
+}
+
+
+
+/*==== section 1 =====*/
+
+
+.exposition-section-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 100px 100px;
+    height: auto;
+    line-height: 30px;
+}
+
+.description-img-1 {
+    width: 400px;
+    margin-left:60px;
+    margin-top: 20px;
+}
+
+#p-img-1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: medium;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/*==== section 2 =====*/
+
+.exposition-section-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: top;
+    margin: 100px 100px;
+    height: auto;
+    line-height: 30px;
+    margin-top: -200px;
+    text-align: end;
+}
+
+.description-img-2 {
+    margin-right: 60px;
+    margin-top: 30px;
+    width: 470px;
+}
+
+#p-img-2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: medium;
+    font-size: 16px;
+    margin-top: 10px;
+
+}
+
+#description-petit {
+    text-align: end;
+    font-family: 'Montserrat', sans-serif;
+    font-style: medium;
+    font-size: 12px;
+    margin-top: 10px;
+    width: 260px;
+    line-height: 10px;
+}
+
+/*==== section 3 =====*/
+
+.exposition-section-3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 100px 100px;
+    height: auto;
+    line-height: 30px;
+    margin-top: -150px
+}
+
+.description-img-3 {
+    margin-left:60px;
+    margin-top: 20px;
+    width: 480px;
+}
+
+#p-img-3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: medium;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/*==== section 4 =====*/
+
+.exposition-section-4 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: top;
+    margin: 100px 100px;
+    height: auto;
+    line-height: 30px;
+    margin-top: 0px;
+    text-align: end;
+}
+
+.description-img-4 {
+    margin-right: 60px;
+    margin-top: 30px;
+    width: 500px;
+}
+
+#p-img-4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: medium;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+

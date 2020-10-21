@@ -12,10 +12,10 @@ let y = 0;
 let friction = 1 / 10;
 
 window.addEventListener("mousemove", moveBackground);
-window.onscroll = function() {
+window.addEventListener("scroll", function() {
     scrollRotate(); 
     changeBackground();
-};
+});
 
 function moveBackground(e) {
     var lMouseX = Math.max(-100, Math.min(100, window.innerWidth / 2 - e.clientX));
