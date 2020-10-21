@@ -7,22 +7,20 @@
 
 body {
     background: #002944;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: white;
 }
 
 .background {
-    position: fixed; 
+    position: fixed;
     z-index: -1;
-    background: url('../img/background_1.jpg') no-repeat center center;
+    background: url("../img/background_1.jpg") no-repeat center center;
     width: 100%;
     height: 100%;
     background-size: cover;
     opacity: 0.2;
     transform: scale(1);
 }
-
-
 
 /*==================== HEADER ====================*/
 
@@ -33,22 +31,18 @@ body {
     width: 100%;
 }
 
-
-
 /*==================== TITRE ====================*/
 
 .main-title {
     display: block;
     position: absolute;
     font-size: 4em;
-    font-family: 'Times New Roman', serif;
+    font-family: "Times New Roman", serif;
     text-align: center;
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
 }
-
-
 
 /*==================== SPLITTER ====================*/
 
@@ -56,8 +50,6 @@ body {
     display: block;
     height: 400px;
 }
-
-
 
 /*==================== BUTTON ====================*/
 
@@ -78,7 +70,7 @@ body {
 /*==================== SECTION 1 ====================*/
 
 .exposition {
-    background: #FFF8F3;
+    background: #fff8f3;
     position: relative;
     width: 100%;
     height: 1400px;
@@ -87,7 +79,7 @@ body {
 }
 
 .exposition h3 {
-    color: #A32F2F;
+    color: #a32f2f;
     margin-top: 25px;
 }
 
@@ -115,7 +107,7 @@ body {
 .section-title {
     text-align: center;
     font-size: 4em;
-    color: #A32F2F;
+    color: #a32f2f;
     margin: 100px 0px;
 }
 
@@ -123,7 +115,8 @@ body {
     margin: 100px 150px;
 }
 
-.section-flex-start, .exposition-section-1 h3 {
+.section-flex-start,
+.exposition-section-1 h3 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -133,7 +126,7 @@ body {
     width: 480px;
     height: auto;
     margin-right: 150px;
-    box-shadow: 0px 8px 25px rgb(0, 0, 0, .15);
+    box-shadow: 0px 8px 25px rgb(0, 0, 0, 0.15);
 }
 
 .exposition-section-1 p {
@@ -145,7 +138,8 @@ body {
     margin: 100px 150px;
 }
 
-.section-flex-end, .exposition-section-2 h3 {
+.section-flex-end,
+.exposition-section-2 h3 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -155,7 +149,7 @@ body {
     width: 280px;
     height: auto;
     margin-left: 150px;
-    box-shadow: 0px 8px 25px rgb(0, 0, 0, .15);
+    box-shadow: 0px 8px 25px rgb(0, 0, 0, 0.15);
 }
 
 .exposition-section-2 p {
@@ -163,11 +157,10 @@ body {
     width: 380px;
 }
 
-
 /*==================== SECTION 2 ====================*/
 
 .activity {
-    background: #FFF8F3;
+    background: #fff8f3;
     position: relative;
     width: 100%;
     height: 1600px;
@@ -183,7 +176,7 @@ body {
 
 .activity h3 {
     text-align: center;
-    color: #A32F2F;
+    color: #a32f2f;
 }
 
 .activity img {
@@ -198,14 +191,13 @@ body {
 }
 
 .blue-txt {
-    color: #759FBC;
+    color: #759fbc;
 }
-
 
 /*==================== SECTION 3 ====================*/
 
 .collection {
-    background: #FFF8F3;
+    background: #fff8f3;
     position: relative;
     width: 100%;
     height: 1400px;
@@ -229,7 +221,7 @@ body {
     width: 480px;
     height: auto;
     margin-right: 150px;
-    box-shadow: 0px 8px 25px rgb(0, 0, 0, .15);
+    box-shadow: 0px 8px 25px rgb(0, 0, 0, 0.15);
 }
 
 .collections-section-1 p {
@@ -248,7 +240,7 @@ body {
     width: 280px;
     height: auto;
     margin-left: 150px;
-    box-shadow: 0px 8px 25px rgb(0, 0, 0, .15);
+    box-shadow: 0px 8px 25px rgb(0, 0, 0, 0.15);
 }
 
 .collection-section-2 p {
