@@ -16,22 +16,27 @@ h1 {
     font-size: 64px;
     font-family: 'Dubai', sans-serif;
     color: #A32F2F;
+    margin-top: 30px;
 }
 
 h2 {
     font-size: 24px;
     color: #000000;
+    margin-top: 50px;
+    margin-left: 60px;
 }
 
 .search-bar {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .row {
     display: flex;
     justify-content: space-around;
     margin: 0px 50px;
+    margin-top: 20px;
 }
 
 .column {
@@ -41,3 +46,8 @@ h2 {
 
 img {
     border-radius: 5px;
+}
+
+p {
+    line-height: 30px;
+}
