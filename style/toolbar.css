@@ -133,11 +133,22 @@ body {
     line-height: 18px;
 }
 
-/*Style des textes des paragraphes de la sidenav*/
-.sidenav img {
+#activite {
     padding: 0px 0px 6px 32px;
     white-space: nowrap;
 }
+
+.sidenav .lien{
+    display: inline-block;
+}
+
+.sidenav .icon{
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+ }
 
 /*Style du bouton de fermeture de la sidenav*/
 .sidenav .close-button {
@@ -149,22 +160,3 @@ body {
 }
 
 /*==================== Search Bar ====================*/
-
-input[type="text"] {
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url("searchicon.png");
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 0px 12px 20px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
-
-input[type="text"]:focus {
-    width: 100%;
-}
