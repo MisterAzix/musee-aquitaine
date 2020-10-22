@@ -1,12 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap");
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 /*==================== TOOLBAR ====================*/
 
+.body-pseudo-element:after {
+    content:"";
+    position:fixed;
+    z-index: 3;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    backdrop-filter: blur(3px);
+    transition: 1s;
+}
+
+.black-overlay {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: 1s;
+    opacity: 0;
+}
 
 .toolbar-nav {
-    z-index: 1;
+    z-index: 5;
+    box-sizing: content-box;
     top: 30%;
-    left: 0;
+    right: 0;
     display: block;
     position: fixed;
     width: 35px;
@@ -16,6 +47,8 @@
     justify-content: space-around;
     flex-direction: column;
     padding: 0px 11px;
+    transition: 0.5s;
+    border-radius: 10px 0 0 10px;
 }
 
 .toolbar-nav img {
@@ -33,11 +66,8 @@
 
 /*==================== XXXXXXX ====================*/
 
-
-
 /*Style de la croix pour fermer la sidenav*/
-  .sidenav a {
-    font-family: 'Montserrat', sans-serif;
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 16px;
@@ -46,30 +76,29 @@
     display: block;
     transition: 0.3s;
     white-space: nowrap;
-  }
+}
 
 /*Style de la croix survolé*/
-  .sidenav a:hover {
+.sidenav a:hover {
     color: #759fbc;
-  }
+}
 
 /*Style de la sidenav*/
-  .sidenav {
+.sidenav {
+    z-index: 10;
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
     top: 0;
     right: 0;
     background-color: #fff8f3;
     overflow-x: hidden;
     /*transition: 0.5s;*/
     padding-top: 60px;
-  }
-  
+}
+
 /*Style des grands titres(h2) de la sidenav*/
-  .sidenav h2 {
-    font-family: 'Playfair Display', serif;
+.sidenav h2 {
     padding: 0px 0px 0px 32px;
     font-size: 32px;
     color: #a32f2f;
@@ -77,11 +106,10 @@
     transition: 0.3s;
     white-space: nowrap;
     line-height: 18px;
-  }
-  
+}
+
 /*Style des sous-titres(h3) de la sidenav*/
-  .sidenav h3 {
-    font-family: 'Montserrat', sans-serif;
+.sidenav h3 {
     padding: 0px 0px 0px 32px;
     font-size: 24px;
     color: #a32f2f;
@@ -89,11 +117,10 @@
     transition: 0.3s;
     white-space: nowrap;
     line-height: 18px;
-  }
+}
 
 /*Style des textes des paragraphes de la sidenav*/
-  .sidenav p {
-    font-family: 'Montserrat', sans-serif;
+.sidenav p {
     padding: 0px 32px 0px 32px;
     font-size: 16px;
     color: #002944;
@@ -101,36 +128,34 @@
     transition: 0.3s;
     white-space: nowrap;
     line-height: 18px;
-  }
+}
 
 /*[?]*/
-  .sidenav .close-button {
+.sidenav .close-button {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
-  
+}
 
 /*==================== Search Bar ====================*/
 
-
-  input[type=text] {
+input[type="text"] {
     width: 130px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px; 
+    background-image: url("searchicon.png");
+    background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 0px 12px 20px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
-  }
-  
-  input[type=text]:focus {
+}
+
+input[type="text"]:focus {
     width: 100%;
-  }
+}
