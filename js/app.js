@@ -18,8 +18,8 @@ window.addEventListener("scroll", function() {
 });
 
 function moveBackground(e) {
-    var lMouseX = Math.max(-100, Math.min(100, window.innerWidth / 2 - e.clientX));
-    var lMouseY = Math.max(-100, Math.min(100, window.innerHeight / 2 - e.clientY));
+    let lMouseX = Math.max(-100, Math.min(100, window.innerWidth / 2 - e.clientX));
+    let lMouseY = Math.max(-100, Math.min(100, window.innerHeight / 2 - e.clientY));
     lFollowX = (20 * lMouseX) / 100;
     lFollowY = (10 * lMouseY) / 100;
     x = (lFollowX - x) * friction;
