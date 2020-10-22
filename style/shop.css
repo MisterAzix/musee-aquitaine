@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #FFF8F3;
+    background-color: #FFFAF7;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: #002944;
@@ -46,6 +46,17 @@ h2 {
 
 img {
     border-radius: 5px;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.photographies {
+    width:100%;
+    height: 400px;
+    object-fit: cover;
 }
 
 p {
