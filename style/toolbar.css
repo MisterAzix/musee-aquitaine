@@ -63,7 +63,7 @@
     right: 0;
     background-color: #fff8f3;
     overflow-x: hidden;
-    transition: 0.5s;
+    /*transition: 0.5s;*/
     padding-top: 60px;
   }
   
@@ -104,7 +104,7 @@
   }
 
 /*[?]*/
-  .sidenav .closebtn {
+  .sidenav .close-button {
     position: absolute;
     top: 0;
     right: 25px;
