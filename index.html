@@ -14,10 +14,18 @@
         <link rel="stylesheet" href="style/navbar.css" />
         <link rel="stylesheet" href="style/toolbar.css" />
         <link rel="stylesheet" href="style/footer.css" />
+        <link rel="stylesheet" href="style/loading.css" />
     </head>
     <body>
         <!-- Fixed Background -->
         <section class="background"></section>
+
+        <!-- Loading Screen -->
+        <h1 class="loading-title">MUSÉE D'AQUITAINE</h1>
+        <div class="loader-container"></div>
+        <section class="loading-section loading-section-right"></section>
+        <section class="loading-section loading-section-left"></section>
+        <script src="js/loading.js"></script>
 
         <!--========================================-->
 
@@ -36,7 +44,7 @@
                     <a class="header-nav-link" href="activity.html"
                         >Visites et activités</a
                     >
-                    <a class="header-nav-link" href="collection.html"
+                    <a class="header-nav-link" href="collections.html"
                         >Collections</a
                     >
                     <a class="header-nav-link" href="shop.html">Boutique</a>
@@ -388,7 +396,7 @@
                     <div class="navbar">
                         <a href="exposition.html">Exposition</a>
                         <a href="activity.html">Activités</a>
-                        <a href="collection.html">Collections</a>
+                        <a href="collections.html">Collections</a>
                         <a href="shop.html">Boutique</a>
                     </div>
 
@@ -471,7 +479,7 @@
             </div>
         </footer>
 
-        <!-- JS -->
+        <!-- JS main -->
         <script src="js/app.js"></script>
         <!--Lien vers le script qui permet l'ouverture et la fermeture de la toolbar-->
         <script src="js/toolbar.js"></script>

@@ -1,0 +1,53 @@
+/* ========== LOADING SCREEN ========== */
+
+.stop-scrolling { 
+    height: 100%; 
+    overflow: hidden; 
+}
+
+.loading-title {
+    position: absolute;
+    z-index: 1002;
+    color: white;
+    font-size: 5em;
+    font-family: "Times New Roman", serif;
+    top: 15%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.loader-container {
+    z-index: 1001;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    position: absolute;
+    z-index: 1002;
+    width: 25vw;
+}
+
+.loading-section {
+    z-index: 1000;
+    position: fixed;
+    background: #002944;
+    width: 50vw;
+    height: 100vh;
+    top: 0;
+    transition: 1s ease;
+}
+
+.loading-section-left {
+    left: 0;
+}
+
+.loading-section-right {
+    right: 0;
+}
