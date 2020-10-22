@@ -6,7 +6,7 @@
 }
 
 .loading-title {
-    position: absolute;
+    position: fixed;
     z-index: 1002;
     color: white;
     font-size: 5em;

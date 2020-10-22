@@ -164,58 +164,69 @@ h2 {
     align-items: center;
 }
 
-.section-2 h2{
+.section-2 h2 {
     font-size: 2em;
     color: white;
-    text-align: center;
 }
 
 .section-2 p {
     line-height: 30px;
     margin: 50px 100px;
     color: white;
-    text-align: center;
     width: 70%;
+    text-align: center;
 }
 
 .ligne-temps {
-
     display: flex;
-    justify-content: space-around;
-    font-size: 0.5em;
-    background: black;
-    opacity: .05;
+    justify-content: center;
+    font-size: 0.4em;
     padding: 10px 25px;
     border-radius: 30px;
     white-space: nowrap;
 }
 
 .gauche {
-    width: 45%;
-    text-align: right;
-}
-.creation {
-    margin-top: 110px;
-}
-
-.faculté-bordeaux {
-    margin-top: 270px;
-}
-
-.collections-bordelaises {
-    margin-top: 250px;
-}
-
-.musée-equipes {
-    margin-top: 270px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 40%;
 }
 
 .droite {
-    width: 45%;
-    justify-content: left;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 40%;
 }
 
-/*================= Section 2 ==================*/
+.text-backgroud-black {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+
+.creation {
+    margin-top: 100px;
+}
+
+.faculté-bordeaux {
+    margin-top: 200px;
+}
+
+.collections-bordelaises {
+    margin-top: 220px;
+}
+
+.musée-equipes {
+    margin-top: 200px;
+}
+
+
+/*================= Section 3 ==================*/
 
 .section-3 {
     background-color: #FFF8F3;
@@ -234,6 +245,7 @@ h2 {
 .section-3 h2 {
     line-height: 50px;
     font-size: 3em;
+    white-space: nowrap;
 }
 
 .img-et-description {
