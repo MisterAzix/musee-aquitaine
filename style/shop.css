@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #FFFAF7;
+    background-color: #f1eeec;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: #002944;
@@ -41,16 +41,21 @@ h2 {
 
 .column {
   width: 25%;
-  padding: 10px;
+  padding: 10px 5px;
+  margin: 10px;
+  background: rgb(230, 230, 230);
+  box-shadow: 5px 5px 25px rgb(0, 0, 0, 0.15);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.column:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 30px rgb(0, 0, 0, 0.30);
 }
 
 img {
     border-radius: 5px;
-    transition: 0.3s;
-}
-
-img:hover {
-    transform: scale(1.05);
 }
 
 .photographies {
