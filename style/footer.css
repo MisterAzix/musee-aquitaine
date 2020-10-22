@@ -11,6 +11,7 @@ footer {
     margin-top: 25vh;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
 }
 
 footer a:link, footer a:active, footer a:visited {
@@ -103,7 +104,10 @@ footer a:link, footer a:active, footer a:visited {
 .footer-right-box {
     height: 100%;
     width: 76%;
-    padding: 60px 100px;
+    padding: 25px 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 /*== Social media ==*/
@@ -152,7 +156,6 @@ footer a:link, footer a:active, footer a:visited {
     font-size: 1.4em;
     display: flex;
     justify-content: space-between;
-    margin-top: 75px;
 }
 
 .navbar a {
@@ -174,7 +177,6 @@ footer a:link, footer a:active, footer a:visited {
     font-size: 1.2em;
     display: flex;
     justify-content: space-between;
-    margin-top: 115px;
 }
 
 .external-link a {
@@ -192,40 +194,36 @@ footer a:link, footer a:active, footer a:visited {
 
 /*== Newsletter ==*/
 
-.newsletter {
-    margin-top: 110px;
-}
-
-.submit {
+.submit-button, .submit-button:visited, .submit-button:link {
     background-color: #A93333;
+    width: 200px;
     color: #ffffff;
     border: none;
-    padding: 10px 30px;
+    padding: 15px 25px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 1.1em;
     border-radius: 30px;
-    transition-duration: 0.5s;
     cursor: pointer;
-  }
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
   
-  .submit:hover {
+.submit-button:hover {
     background-color: #000000;
     color: white;
-  }
+    transition-duration: 0.5s;
+}
 
-  .container {
-      padding: 22px 0px;
-      display: flex;
-      justify-content: space-between;
-  }
+.container {
+    padding: 22px 0px;
+    display: flex;
+    justify-content: flex-start;
+}
 
-  .button {
-    padding: 5px 30px;
-  }
-  
-
-  
-  
-  
+input[type=text] {
+    width: 500px;
+    border-radius: 25px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 25px;
+}
