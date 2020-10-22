@@ -12,6 +12,18 @@ footer {
     color: #000000;
     font-family: 'Montserrat', sans-serif;
     white-space: nowrap;
+    position: relative;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 50%;
+    height: 100%;
+    background-color: #A93333;
+    z-index: 0;
 }
 
 footer a:link, footer a:active, footer a:visited {
@@ -21,6 +33,8 @@ footer a:link, footer a:active, footer a:visited {
 .footer-top-section {
     display: flex;
     height: 85%;
+    z-index: 1;
+    position: relative;
 }
 
 
@@ -30,32 +44,19 @@ footer a:link, footer a:active, footer a:visited {
 .footer-bottom-section {
     background: #DCDCDC;
     height: 15%;
-    padding: 1% 1%;
-}
-
-.footer-bottom-section {
-    background: #DCDCDC;
-    height: 15%;
     padding: 1% 0%;
+    z-index: 1;
+    position: relative;
 }
 
-.footer-bottom-section div div {
-    display: inline;
-    width: 275px;
-    text-align: center;
-}
-
-.footer-flex-top {
+.footer-flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: #000000;
-}
-
-
-.footer-flex-bottom {
-    display: flex;
-    justify-content: space-between;
-    line-height: 50px;    
+    max-width: 1280px;
+    height: 100%;
+    margin: auto;
 }
 
 .footer-split {
@@ -75,29 +76,35 @@ footer a:link, footer a:active, footer a:visited {
     width: 24%;
     height: 100%;
     color: #ffffff;
-    font-size: 1.5em;
-    padding: 35px 85px;
+    font-size: 1.3em;
+    padding: 35px 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .footer-left-box h4 {
-    margin-top: 20px;
     font-size: 1.5em;
 }
 
 .footer-left-box h4::after {
-    content: '';
+    content: '';    
     display: block;
-    width: 100%;
     height: 2px;
     background: white;
-    margin-top: 10px;
+    margin-top: 5px;
+    width: 80%;
 }
 
 .footer-left-box p {
-    margin-top: 70px;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
+.footer-top-section {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*========== Right ==========*/
 
@@ -108,21 +115,23 @@ footer a:link, footer a:active, footer a:visited {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    background-color: #F8F8F8;
 }
 
 /*== Social media ==*/
+
+.social-network {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
 
 .footer-right-box h4 {
     font-size: 1.5em;
     color: #000000;
     margin-right: 15%;
     white-space: nowrap;
-}
-
-.social-network {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .social-network-icon {
@@ -140,13 +149,14 @@ footer a:link, footer a:active, footer a:visited {
 }
 
 .social-network img {
-    /*filter: grayscale(1);*/
+    filter: grayscale(1) brightness(0);
     width: 30px;
     height: auto;
+    transition: 0.2s;
 }
 
 .social-network img:hover {
-    filter: grayscale(0);
+    filter: grayscale(0) brightness(1);
 }
 
 
@@ -211,11 +221,11 @@ footer a:link, footer a:active, footer a:visited {
 .submit-button:hover {
     background-color: #000000;
     color: white;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 
 .container {
-    padding: 22px 0px;
+    margin-top: 20px;
     display: flex;
     justify-content: flex-start;
 }
@@ -227,3 +237,10 @@ input[type=text] {
     border: 1px solid #ccc;
     margin-right: 25px;
 }
+
+input[type=text]:focus {
+    border: 3px solid #DCDCDC;
+    transition: 0.2s;
+}
+
+
