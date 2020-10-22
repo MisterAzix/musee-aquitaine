@@ -5,6 +5,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-nav {
@@ -13,11 +14,18 @@ header {
 }
 
 .header-logo {
-    font-size: 3em;
+    height: 64px;
     margin: 0px 35px;
+    opacity: .75;
+    transition: 1s ease;
 }
 
-.header-nav a {
+.header-logo:hover {
+    opacity: 1;
+    transform: rotate(180deg);
+}
+
+.header-nav .header-nav-link {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
@@ -26,7 +34,7 @@ header {
     transition: 0.3s;
 }
 
-.header-nav a::after {
+.header-nav .header-nav-link::after {
     content: '';
     display: block;
     visibility: hidden;
@@ -36,13 +44,13 @@ header {
     background: white;
 }
 
-.header-nav a:hover:after {
+.header-nav .header-nav-link:hover:after {
     visibility: visible;
     transform: scaleX(1);
     transition: 0.2s ease;
 }
 
-.header-nav a:hover {
+.header-nav .header-nav-link:hover {
     opacity: 1;
     transition: 0.3s;
 }
