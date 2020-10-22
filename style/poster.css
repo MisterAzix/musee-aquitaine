@@ -168,9 +168,29 @@ h4 {
     white-space: nowrap;
 }
 
+.video-radio a {
+    text-decoration: none;
+}
+
+.video:hover {
+    background-color:#1A5C8A;
+    transition: 0.2s;
+    color: white;
+    
+}
+
+.radio:hover {
+    background-color:#1A5C8A;
+    transition: 0.2s;
+    color: white;
+    
+}
+
 .video {
     margin-right: 30px;
+    
 }
  .radio {
      margin-left: 30px;
  }
+
