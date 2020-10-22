@@ -20,11 +20,13 @@ window.addEventListener("scroll", function() {
 function moveBackground(e) {
     let lMouseX = Math.max(-100, Math.min(100, window.innerWidth / 2 - e.clientX));
     let lMouseY = Math.max(-100, Math.min(100, window.innerHeight / 2 - e.clientY));
-    lFollowX = (20 * lMouseX) / 100;
-    lFollowY = (10 * lMouseY) / 100;
+    lFollowX = (100 * lMouseX) / 100;
+    lFollowY = (50 * lMouseY) / 100;
     x = (lFollowX - x) * friction;
     y = (lFollowY - y) * friction;
+    background.style.transition = '.3s'
     background.style.transform = 'translate(' + x + 'px, ' + y + 'px) scale(1.05)';
+    console.log(`lMouseX : ${lMouseX}, lFollowX : ${lFollowX}, x : ${x} - lMouseY : ${lMouseY}, lFollowY : ${lFollowY}, y : ${y}`)
 }
 
 function scrollRotate() {
