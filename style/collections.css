@@ -139,3 +139,151 @@ h2 {
 .description-recolement {
     width: auto;
 }
+
+
+/*============= Statue ==============*/
+
+.section-2 {
+    z-index: -1;
+    background: url('../img/section/B&W_background.jpg') no-repeat center center;
+    width: 100%;
+    height: 1100px;
+    background-size: cover;
+    transform: scale(1);
+}
+
+
+/*================= Section 2 ==================*/
+
+.section-2-top {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-2 h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.section-2 p {
+    line-height: 30px;
+    margin: 50px 100px;
+    color: white;
+    text-align: center;
+    width: 70%;
+}
+
+.ligne-temps {
+
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.5em;
+    background: black;
+    opacity: .05;
+    padding: 10px 25px;
+    border-radius: 30px;
+    white-space: nowrap;
+}
+
+.gauche {
+    width: 45%;
+    text-align: right;
+}
+.creation {
+    margin-top: 110px;
+}
+
+.faculté-bordeaux {
+    margin-top: 270px;
+}
+
+.collections-bordelaises {
+    margin-top: 250px;
+}
+
+.musée-equipes {
+    margin-top: 270px;
+}
+
+.droite {
+    width: 45%;
+    justify-content: left;
+}
+
+/*================= Section 2 ==================*/
+
+.section-3 {
+    background-color: #FFF8F3;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+    overflow: hidden;
+}
+
+.section-3 img {
+    width: 100%;
+    height: auto
+}
+
+.section-3 h2 {
+    line-height: 50px;
+    font-size: 3em;
+}
+
+.img-et-description {
+    width: 50%;
+    height: auto;
+}
+
+.centre-jean-moulin {
+    display: flex;
+    justify-content: flex-end;
+    align-items: top;
+    margin: 100px 100px;
+    height: auto;
+    line-height: 30px;
+    text-align: end;
+}
+
+.txt-jean-moulin {
+    margin-right: 60px;
+    margin-top: 60px;
+    width: auto;
+    font-weight: 500;
+}
+
+.centre-jean-moulin h2 {
+    margin-bottom: 10px;
+}
+
+.description-jean-moulin {
+    font-size: 0.85em;
+    margin-top: 10px;
+    width: auto;
+}
+
+.musée-goupil {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 100px 100px;
+    height: auto;
+    line-height: 30px;
+}
+
+.txt-goupil {
+    width: 400px;
+    margin-left:60px;
+    margin-top: 50px;
+}
+
+.description-goupil {
+    font-size: 0.85em;
+    width: auto;
+}
