@@ -11,18 +11,22 @@
 <body>
 
     <nav class="toolbar-nav">
-        <a href="#Ticket"><img src="img/icon/ticket_icon.png" alt="Billetterie" style="cursor:pointer" onclick="ouvrirBilleterie()"></a>
+        <img id="ticket-button" src="img/icon/ticket_icon.png" alt="Billetterie" style="cursor:pointer">
         <div class="spliter"></div>
-        <a href="#Informations"><img src="img/icon/info_icon.png" alt="Informations" style="cursor:pointer" onclick="ouvrirInformations()"></a>
+        <img id="info-button" src="img/icon/info_icon.png" alt="Informations" style="cursor:pointer">
         <div class="spliter"></div>
-        <a href="#Agenda"><img src="img/icon/agenda_icon.png" alt="Agenda" style="cursor:pointer" onclick="ouvrirAgenda()"></a>
+        <img id="agenda-button" src="img/icon/agenda_icon.png" alt="Agenda" style="cursor:pointer">
         <div class="spliter"></div>
-        <a href="#Recherche"><img src="img/icon/search_icon.png" alt="Recherche" style="cursor:pointer" onclick="ouvrirRecherche()"></a>
+        <img id="search-button" src="img/icon/search_icon.png" alt="Recherche" style="cursor:pointer">
     </nav>
 
     
     <!--Sidenav de la barre de la billetterie-->
-    <div id="billetterie" class="sidenav"> 
+    <div id="billetterie" class="sidenav">
+
+        <!--Script qui permet de ferme la sidenav-->
+        <a href="javascript:void(0)" class="close-button">&times;</a>
+        
         <h2 style="text-align: center">BILLETTERIE</h2>
             <br>
         <h3>HORAIRES</h3> 
@@ -42,21 +46,15 @@
         <p>&bull; Étudiants</p>
         <p>&bull; Personnes handicapés et accompagnateur</p>
         
-        
-
-            <!--Script qui permet de ferme la sidenav-->
-            <a href="javascript:void(0)" class="closebtn" onclick="fermerNav()">&times;</a>
-            
-
-        </div>
+    </div>
 
 
     <!--Sidenav des informations -->
     <div id="informations" class="sidenav"> 
 
         <!--Script qui permet de ferme la sidenav-->
-        <a href="javascript:void(0)" class="closebtn" onclick="fermerNav()">&times;</a>
-        
+        <a href="javascript:void(0)" class="close-button">&times;</a>
+
         <h2 style="text-align: center">CONTACT</h2>
         
         <h3>ADRESSE</h3>
@@ -84,39 +82,39 @@
     <!--Sidenav de la barre de l'agenda-->
     <div id="agenda" class="sidenav"> 
 
-            <!--Script qui permet de ferme la sidenav-->
-            <a href="javascript:void(0)" class="closebtn" onclick="fermerNav()">&times;</a>
+        <!--Script qui permet de ferme la sidenav-->
+        <a href="javascript:void(0)" class="close-button">&times;</a>
 
-            <h2 style="text-align: center">AGENDA</h2>
-                <br>
-            <h3 style="text-align: center">ACTIVITÉ DU JOUR</h3>
+        <h2 style="text-align: center">AGENDA</h2>
+            <br>
+        <h3 style="text-align: center">ACTIVITÉ DU JOUR</h3>
 
-            <img src="img\section\visite_familiale.jpg" alt="Visite familiale guidée"
-            height="200"
-            width="500"> 
+        <img src="img\section\visite_familiale.jpg" alt="Visite familiale guidée"
+        height="200"
+        width="500"> 
 
-            <p style="font-weight: bold">Visite commentée - exposition "Comme une image"</p>
-                <br>
-            <p>Les audioguides sont temporairement indisponibles.</p>
-            <p>L'application "Musée d'Aquitaine" disponible sur Android</p>
-                <br>
-            <!--Lien vers la page Google Play du Musée d'Aquitaine-->
-            <a href="https://play.google.com/store/apps/details?id=fr.mbdx.maq" target="_blank">&rarr; Google Play</a>
+        <p style="font-weight: bold">Visite commentée - exposition "Comme une image"</p>
+            <br>
+        <p>Les audioguides sont temporairement indisponibles.</p>
+        <p>L'application "Musée d'Aquitaine" disponible sur Android</p>
+            <br>
+        <!--Lien vers la page Google Play du Musée d'Aquitaine-->
+        <a href="https://play.google.com/store/apps/details?id=fr.mbdx.maq" target="_blank">&rarr; Google Play</a>
 
-        </div>
+    </div>
 
 
     <!--Sidenav de la barre de recherche-->
     <div id="recherche" class="sidenav"> 
 
         <!--Script qui permet de ferme la sidenav-->
-        <a href="javascript:void(0)" class="closebtn" onclick="fermerNav()">&times;</a>
+        <a href="javascript:void(0)" class="close-button">&times;</a>
             
         <h2 style="text-align: center">RECHERCHE</h2>
-        
 
     </div>
     
+
     <!--Lien vers le script qui permet l'ouverture et la fermeture de la toolbar-->
     <script src="js/toolbar.js"></script>
         
