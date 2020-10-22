@@ -119,14 +119,10 @@ h2 {
 }
 
 #description-petit {
-    display: flex;
-    justify-content: flex-end;
-    text-align: end;
-    font-style: medium;
-    font-size: 12px;
-    margin-top: 10px;
+    font-size: 0.9em;
+    margin-top: 2px;
     width: auto;
-    line-height: 16px;
+    line-height: 25px;
 }
 
 /*==== section 3 =====*/
@@ -169,7 +165,7 @@ h2 {
 .description-img-4 {
     margin-right: 60px;
     margin-top: 30px;
-    width: 450px;
+    width: auto;
 }
 
 #p-img-4 {
@@ -177,7 +173,5 @@ h2 {
     font-size: 16px;
     margin-top: 10px;
 }
-
-
 
 /*========= section 2 ==========*/
