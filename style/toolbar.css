@@ -64,10 +64,11 @@ body {
 }
 
 
-/*==================== XXXXXXX ====================*/
+/*==================== SIDENAV ====================*/
 
 /*Style de la croix pour fermer la sidenav*/
 .sidenav a {
+    font-family: 'Montserrat', sans-serif;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 16px;
@@ -93,13 +94,13 @@ body {
     right: 0;
     background-color: #fff8f3;
     overflow-x: hidden;
-    /*transition: 0.5s;*/
+    transition: 0.5s;
     padding-top: 60px;
 }
 
 /*Style des grands titres(h2) de la sidenav*/
 .sidenav h2 {
-    padding: 0px 0px 0px 32px;
+    padding: 0px 0px 0px 0px;
     font-size: 32px;
     color: #a32f2f;
     display: block;
@@ -110,7 +111,8 @@ body {
 
 /*Style des sous-titres(h3) de la sidenav*/
 .sidenav h3 {
-    padding: 0px 0px 0px 32px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 0px 12px 32px;
     font-size: 24px;
     color: #a32f2f;
     display: block;
@@ -121,7 +123,8 @@ body {
 
 /*Style des textes des paragraphes de la sidenav*/
 .sidenav p {
-    padding: 0px 32px 0px 32px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 0px 6px 32px;
     font-size: 16px;
     color: #002944;
     display: block;
@@ -130,7 +133,13 @@ body {
     line-height: 18px;
 }
 
-/*[?]*/
+/*Style des textes des paragraphes de la sidenav*/
+.sidenav img {
+    padding: 0px 0px 6px 32px;
+    white-space: nowrap;
+}
+
+/*Style du bouton de fermeture de la sidenav*/
 .sidenav .close-button {
     position: absolute;
     top: 0;
