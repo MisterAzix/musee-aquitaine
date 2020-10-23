@@ -1,11 +1,18 @@
 /*==================== NAVBAR ====================*/
 
 header {
+    z-index: 3;
     height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.3s;
+}
+
+#navbar {
+    background: #002944;
+    position: fixed;
 }
 
 .header-nav {
@@ -83,11 +90,13 @@ header {
 }
 
 .header-icon-lang img {
+    z-index: 501;
     position: absolute;
     height: 16px;
 }
 
 .header-icon-accessibility button {
+    z-index: 501;
     position: absolute;
 }
 

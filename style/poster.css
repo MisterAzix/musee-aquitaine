@@ -50,6 +50,12 @@ h4 {
     color: #FFF8F3
 }
 
+/*==================== SPLITTER ====================*/
+
+.splitter {
+    display: block;
+    height: 400px;
+}
 
 /*============= section 1 ==============*/
 
@@ -58,7 +64,7 @@ h4 {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 60px 20px 200px;
+    padding: 200px 20px 50px;
 }
 
 .section-1 h1 {

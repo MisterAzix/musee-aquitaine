@@ -6,6 +6,9 @@
         <title>Expositions</title>
         <link rel="stylesheet" href="style/exposition.css" />
         <link rel="stylesheet" href="style/loading.css" />
+        <link rel="stylesheet" href="style/footer.css" />
+        <link rel="stylesheet" href="style/navbar.css" />
+        <link rel="stylesheet" href="style/toolbar.css" />
     </head>
 
     <body>
@@ -20,6 +23,223 @@
 
         <!--========================================-->
 
+        <header id="navbar">
+            <nav class="header-nav">
+                <a href="index.html"
+                    ><img
+                        class="header-logo"
+                        src="img/icon/website_logo.png"
+                        alt="Logo"
+                /></a>
+                <a class="header-nav-link" href="exposition.html">Exposition</a>
+                <a class="header-nav-link" href="activity.html"
+                    >Visites et activités</a
+                >
+                <a class="header-nav-link" href="collections.html"
+                    >Collections</a
+                >
+                <a class="header-nav-link" href="shop.html">Boutique</a>
+            </nav>
+            <div class="header-nav-icon">
+                <div class="header-nav-icon-lang">
+                    <img
+                        id="lang-icon"
+                        class="header-icon"
+                        src="img/icon/lang_icon.png"
+                        alt="Choix langue"
+                    />
+                    <div class="header-icon-lang">
+                        <img
+                            class="icon-lang-1"
+                            src="img/flag/france_flag.jpg"
+                            alt="Drapeau France"
+                        />
+                        <img
+                            class="icon-lang-2"
+                            src="img/flag/uk_flag.jpg"
+                            alt="Drapeau Angleterre"
+                        />
+                        <img
+                            class="icon-lang-3"
+                            src="img/flag/spain_flag.jpg"
+                            alt="Drapeau Espagne"
+                        />
+                    </div>
+                </div>
+
+                <div class="header-nav-icon-accessibility">
+                    <img
+                        id="accessibility-icon"
+                        class="header-icon"
+                        src="img/icon/accessibility_icon.png"
+                        alt="Accessibilité"
+                    />
+                    <div class="header-icon-accessibility">
+                        <button class="icon-access-1">A+</button>
+                        <button class="icon-access-2">A-</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--========================================-->
+
+        <section class="black-overlay"></section>
+
+        <!-- Navbar -->
+        <nav class="toolbar-nav">
+            <img
+                id="ticket-button"
+                src="img/icon/ticket_icon.png"
+                alt="Billetterie"
+                style="cursor: pointer"
+            />
+            <div class="spliter"></div>
+            <img
+                id="info-button"
+                src="img/icon/info_icon.png"
+                alt="Informations"
+                style="cursor: pointer"
+            />
+            <div class="spliter"></div>
+            <img
+                id="agenda-button"
+                src="img/icon/agenda_icon.png"
+                alt="Agenda"
+                style="cursor: pointer"
+            />
+            <div class="spliter"></div>
+            <img
+                id="search-button"
+                src="img/icon/search_icon.png"
+                alt="Recherche"
+                style="cursor: pointer"
+            />
+        </nav>
+
+        <!--Sidenav de la barre de la billetterie-->
+        <div id="billetterie" class="sidenav">
+            <!--Script qui permet de ferme la sidenav-->
+            <a href="javascript:void(0)" class="close-button">&times;</a>
+
+            <h2 style="text-align: center">BILLETTERIE</h2>
+            <br />
+            <h3>HORAIRES</h3>
+
+            <p>Du mardi au dimanche, de 11 h à 18 h</p>
+            <p>Fermé les lundis et jours fériés</p>
+            <p>Excepté le 14 juillet et le 15 août</p>
+            <br />
+            <h3>TARIFS</h3>
+
+            <p>Plein tarif : 5€</p>
+            <p>Tarif réduit : 3€</p>
+
+            <p style="font-weight: bold">Gratuit pour les :</p>
+            <p>&bull; Moins de 18 ans</p>
+            <p>&bull; Scolaire</p>
+            <p>&bull; Étudiants</p>
+            <p>&bull; Personnes handicapés et accompagnateur</p>
+        </div>
+
+        <!--Sidenav des informations -->
+        <div id="informations" class="sidenav">
+            <!--Script qui permet de ferme la sidenav-->
+            <a href="javascript:void(0)" class="close-button">&times;</a>
+
+            <h2 style="text-align: center">CONTACT</h2>
+            <br />
+            <h3>ADRESSE</h3>
+
+            <p>20 Cours Pasteur, 33000 Bordeaux</p>
+
+            <!--https://www.google.com/maps/d/viewer?mid=10Is1WKPs9bVsvy-pYXgXqHtqOsg&msa=0&hl=fr&ie=UTF8&t=m&source=embed&ll=44.83864724610595%2C-0.5753659999999972&spn=0.010651%2C0.018239&z=15-->
+            <a class="lien" href="https://cutt.ly/2gz07uG" target="_blank"
+                >&rarr; Google Maps</a
+            >
+            <img
+                src="img\icon\reseaux\google-maps_icon.png"
+                class="icon"
+                class="lien"
+            />
+
+            <br />
+            <h3>TÉLÉPHONE</h3>
+
+            <p>MUSÉE - 05 56 01 51 00</p>
+            <p>ACCUEIL DE GROUPE - 05 56 01 51 04</p>
+            <p>ACCESSIBILITÉ - 05 56 01 51 03</p>
+            <br />
+            <h3>MAILS</h3>
+
+            <p>musaq@mairie-bordeaux.fr</p>
+            <p>service.mediation.aquitaine@mairie-bordeaux.fr</p>
+            <p>service.accueil@mairie-bordeaux.fr</p>
+        </div>
+
+        <!--Sidenav de la barre de l'agenda-->
+        <div id="agenda" class="sidenav">
+            <!--Script qui permet de ferme la sidenav-->
+            <a href="javascript:void(0)" class="close-button">&times;</a>
+
+            <h2 style="text-align: center">AGENDA</h2>
+            <br />
+            <h3>ACTIVITÉ DU JOUR</h3>
+
+            <img
+                src="img\section\visite_familiale.jpg"
+                alt="Visite familiale guidée"
+                height="200"
+                width="436"
+                id="activite"
+            />
+
+            <p style="font-weight: bold">
+                Visite commentée - exposition "Comme une image"
+            </p>
+            <br />
+            <p>Les audioguides sont temporairement indisponibles.</p>
+            <p>
+                L'application "Musée d'Aquitaine" est téléchargeable <br />
+                sur Google Play Store
+            </p>
+            <br />
+            <!--Lien vers la page Google Play du Musée d'Aquitaine-->
+            <a
+                class="lien"
+                href="https://play.google.com/store/apps/details?id=fr.mbdx.maq"
+                target="_blank"
+                >&rarr; Google Play</a
+            >
+            <img
+                src="img\icon\reseaux\google-play_icon.png"
+                class="icon"
+                class="lien"
+            />
+        </div>
+
+        <!--Sidenav de la barre de recherche-->
+        <div id="recherche" class="sidenav">
+            <!--Script qui permet de ferme la sidenav-->
+            <a href="javascript:void(0)" class="close-button">&times;</a>
+
+            <h2 style="text-align: center">RECHERCHE</h2>
+            <br />
+            <div class="search-bar">
+                <input
+                    type="search"
+                    id="site-search"
+                    placeholder="Que recherchez-vous ?"
+                />
+                <!-- <button>Rechercher un produit</button> -->
+            </div>
+        </div>
+
+        <!--Lien vers le script qui permet l'ouverture et la fermeture de la toolbar-->
+        <script src="js/toolbar.js"></script>
+
+        <!--========================================-->
+
         <section class="grande-section-1">
             <h1>EXPOSITIONS</h1>
 
@@ -29,7 +249,7 @@
             <div class="section-1">
                 <img src="img/section/salle_rouge.jpg" />
                 <div class="description-img-1">
-                    <h2>À l'affiche</h2>
+                    <h2><a href="poster.html">À l'affiche</a></h2>
                     <p id="p-img-1">
                         Exposition « Comme une image. L’enfance au XIXe siècle
                         dans les collections du musée Goupil »
@@ -99,9 +319,147 @@
 
         <!--========================================-->
 
-        <section class="grande-section-2">footer</section>
+        <footer>
+            <div class="footer-top-section">
+                <div class="footer-left-box">
+                    <h4>Nous contacter</h4>
+                    <p>
+                        Musée d'Aquitaine<br />
+                        <br />20 cours Pasteur<br />
+                        <br />33000 Bordeaux<br />
+                        <br /><br />
+                        <br />Téléphone Accueil :<br />
+                        <br />05 56 01 51 00
+                        <br />
+                    </p>
+                </div>
+                <div class="footer-right-box">
+                    <!-- SOCIAL NETWORK -->
+                    <div class="social-network">
+                        <h4>Suivez nous sur :</h4>
 
-        <!-- JS -->
-        <script src="js/app.js"></script>
+                        <div class="social-network-icon">
+                            <a href="https://www.instagram.com/musee_aquitaine/"
+                                ><img
+                                    src="img/icon/reseaux/instagram_icon_color.png"
+                                    alt="Instagram"
+                            /></a>
+                            <a href="https://twitter.com/MuseeAquitaine"
+                                ><img
+                                    src="img/icon/reseaux/twitter_icon_color.png"
+                                    alt="Twitter"
+                            /></a>
+                            <a href="https://www.facebook.com/musee.aquitaine/"
+                                ><img
+                                    src="img/icon/reseaux/facebook_icon_color.png"
+                                    alt="Facebook"
+                            /></a>
+                            <a href="https://www.pinterest.fr/museeaquitaine/"
+                                ><img
+                                    src="img/icon/reseaux/pinterest_icon_color.png"
+                                    alt="Pinterest"
+                            /></a>
+                            <a
+                                href="https://www.youtube.com/channel/UCNmf4zwWQL7YuFh6iGJi4GA"
+                                ><img
+                                    src="img/icon/reseaux/youtube_icon_color.png"
+                                    alt="Youtube"
+                            /></a>
+                        </div>
+                    </div>
+
+                    <!-- NAVBAR -->
+                    <div class="navbar">
+                        <a href="exposition.html" class="header-active"
+                            >Exposition</a
+                        >
+                        <a href="activity.html">Activités</a>
+                        <a href="collections.html">Collections</a>
+                        <a href="shop.html">Boutique</a>
+                    </div>
+
+                    <!-- EXTERNAL LINK -->
+                    <div class="external-link">
+                        <a href="http://www.musee-aquitaine-bordeaux.fr/fr/"
+                            >Bordeaux.fr ➚</a
+                        >
+                        <a
+                            href="http://www.musee-aquitaine-bordeaux.fr/fr/presse"
+                            >Agenda Ville ➚</a
+                        >
+                        <a
+                            href="http://www.musee-aquitaine-bordeaux.fr/fr/presse"
+                            >Info Culture ➚</a
+                        >
+                    </div>
+
+                    <!-- NEWSLETTER -->
+                    <div class="newsletter">
+                        <h4>Recevez nos actualités</h4>
+                        <div class="container">
+                            <input
+                                class="newsletter-input"
+                                type="text"
+                                placeholder="Adresse mail"
+                                name="mail"
+                                required
+                            />
+                            <a class="submit-button" href="">Je m'inscris</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-section">
+                <div class="footer-flex">
+                    <div>
+                        <a
+                            href="http://www.musee-aquitaine-bordeaux.fr/fr/article/privatisation"
+                            >Privatisation</a
+                        >
+                    </div>
+                    <section class="footer-split"></section>
+                    <div>
+                        <a
+                            href="http://www.musee-aquitaine-bordeaux.fr/fr/nos-partenaires"
+                            >Nos partenaires</a
+                        >
+                    </div>
+                    <section class="footer-split"></section>
+                    <div>
+                        <a
+                            href="http://www.musee-aquitaine-bordeaux.fr/fr/soutenez-le-musee"
+                            >Soutenez le Musée</a
+                        >
+                    </div>
+                    <section class="footer-split"></section>
+                    <div>
+                        <a
+                            href="http://www.musee-aquitaine-bordeaux.fr/fr/sitemap"
+                            >Plan du site</a
+                        >
+                    </div>
+                    <section class="footer-split"></section>
+                    <div>
+                        <a
+                            href="http://www.musee-aquitaine-bordeaux.fr/fr/presse"
+                            >Presse</a
+                        >
+                    </div>
+                    <section class="footer-split"></section>
+                    <div>
+                        <a
+                            href="http://www.musee-aquitaine-bordeaux.fr/fr/article/mentions-legales"
+                            >Mentions légales</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--Lien vers le script qui permet l'ouverture et la fermeture de la toolbar-->
+        <script src="js/toolbar.js"></script>
+        <!-- Navbar -->
+        <script src="js/navbar.js"></script>
     </body>
 </html>
