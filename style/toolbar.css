@@ -53,8 +53,14 @@ body {
 
 .toolbar-nav img {
     display: block;
+    background: #002944;
     width: 32px;
     margin: 12px 0px;
+    transition: 0.3s ease;
+}
+
+.toolbar-nav img:hover {
+    transform: scale(1.25);
 }
 
 .toolbar-nav div {
