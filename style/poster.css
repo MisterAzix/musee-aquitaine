@@ -165,36 +165,78 @@ h4 {
 }
 
 .video-radio h4{
-    background: white;
-    padding: 10px 25px;
-    border-radius: 30px;
     color: #002944;
     white-space: nowrap;
 }
+
 
 .video-radio a {
     text-decoration: none;
 }
 
-.video:hover {
-    background-color:#1A5C8A;
-    transition: 0.2s;
-    color: white;
-    
-}
+.play {
+    height: 25px;
+    width: 25px;
+    margin-left: -15px;
 
-.radio:hover {
-    background-color:#1A5C8A;
-    transition: 0.2s;
-    color: white;
-    
 }
-
-.video {
+.video-box {
     margin-right: 30px;
-    
 }
+.txt-video {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 10px 0px 10px 25px;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.titre-video {
+    margin-left: 15px;
+}
+
+.txt-video:hover {
+    background-color:#1A5C8A;
+    color: white;
+    padding-right: 25px;
+  }
+
+.txt-video:hover .titre-video{
+    color: white;
+  }
+
+
+.titre-video {
+    margin-right: 30px;
+}
+
  .radio {
-     margin-left: 30px;
- }
+    height: 25px;
+    width: auto;
+    margin-right: 0px;
+
+}
+
+.txt-radio {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 10px 50px 10px 0px;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.titre-radio {
+    margin-left: 20px;
+}
+
+.txt-radio:hover {
+    background-color:#1A5C8A;
+    padding-left: 30px;
+  }
+
+  .txt-radio:hover .titre-radio{
+    color: white;
+  }
 
