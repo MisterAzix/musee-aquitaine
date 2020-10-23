@@ -50,18 +50,44 @@
                     <a class="header-nav-link" href="shop.html">Boutique</a>
                 </nav>
                 <div class="header-nav-icon">
-                    <a href="#Language"
-                        ><img
+                    <div class="header-nav-icon-lang">
+                        <img
+                            id="lang-icon"
                             class="header-icon"
                             src="img/icon/lang_icon.png"
                             alt="Choix langue"
-                    /></a>
-                    <a href="#Accessibility"
-                        ><img
+                        />
+                        <div class="header-icon-lang">
+                            <img
+                                class="icon-lang-1"
+                                src="img/flag/france_flag.jpg"
+                                alt="Drapeau France"
+                            />
+                            <img
+                                class="icon-lang-2"
+                                src="img/flag/uk_flag.jpg"
+                                alt="Drapeau Angleterre"
+                            />
+                            <img
+                                class="icon-lang-3"
+                                src="img/flag/spain_flag.jpg"
+                                alt="Drapeau Espagne"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="header-nav-icon-accessibility">
+                        <img
+                            id="accessibility-icon"
                             class="header-icon"
                             src="img/icon/accessibility_icon.png"
                             alt="Accessibilité"
-                    /></a>
+                        />
+                        <div class="header-icon-accessibility">
+                            <button class="icon-access-1">A+</button>
+                            <button class="icon-access-2">A-</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <a href="#exposition-section"
@@ -534,5 +560,6 @@
         <script src="js/app.js"></script>
         <!--Lien vers le script qui permet l'ouverture et la fermeture de la toolbar-->
         <script src="js/toolbar.js"></script>
+        <script src="js/navbar.js"></script>
     </body>
 </html>

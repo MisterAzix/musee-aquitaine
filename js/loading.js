@@ -9,7 +9,7 @@ title.innerHTML = '';
 let delay = 30;
 let i = 0;
 let repeatNum = 1;
-let repeat = 1;
+let repeat = 0;
 
 let text = "Musée d'Aquitaine";
 let writingDelay = 100;
