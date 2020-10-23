@@ -67,7 +67,7 @@ h2 {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 50px 0px;
+    padding: 200px 0px 50px;
     overflow: hidden;
 }
 /*============= section 1 ==============*/
@@ -87,6 +87,10 @@ h2 {
     width: 400px;
     margin-left:60px;
     margin-top: 20px;
+}
+
+.description-img-1 a, .description-img-1 a:visited .description-img-1 a:active  {
+    color: #A32F2F;
 }
 
 #p-img-1 {
