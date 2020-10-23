@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -24,8 +26,10 @@ body {
 h1 {
     text-align: center;
     font-size: 4em;
-    font-family: 'Dubai', sans-serif;
+    font-family: 'Cinzel', serif;
+    letter-spacing: .1rem;
     color: #A32F2F;
+    font-weight: 500;
 }
 
 h2 {
