@@ -236,11 +236,12 @@ input[type=text] {
     padding: 10px;
     border: 1px solid #ccc;
     margin-right: 25px;
+    outline: none;
+    transition: 0.2s;
 }
 
 input[type=text]:focus {
     border: 3px solid #DCDCDC;
-    transition: 0.2s;
 }
 
 
