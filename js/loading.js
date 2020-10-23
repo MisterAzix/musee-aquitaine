@@ -4,21 +4,39 @@ let sectionLeft = document.querySelector('.loading-section-left');
 let sectionRight = document.querySelector('.loading-section-right');
 let title = document.querySelector('.loading-title');
 
+title.innerHTML = '';
+
 let delay = 30;
 let i = 0;
 let repeatNum = 1;
 let repeat = 1;
 
-window.addEventListener('load', loadingAnimation);
+let text = "Musée d'Aquitaine";
+let writingDelay = 100;
+let k = 0;
+
+window.addEventListener('load', () => {
+    loadingAnimation();
+    disableScroll();
+    writeText();
+});
+
+
+function writeText() {
+    if (k < text.length) {
+        title.innerHTML += text.charAt(k);
+        k++;
+        setTimeout(writeText, writingDelay);
+    }
+}
 
 //Fonction très moche mais ça marche.
 function loadingAnimation() {
-    disableScroll();
+    writeText();
     if(i < 48 && repeatNum <= repeat) {
         setTimeout(() => {
             i++;
             loop(i);
-            console.log(i)
             loadingAnimation();
         }, delay);
     }else if (repeatNum >= repeat) {

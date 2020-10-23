@@ -26,7 +26,7 @@ function moveBackground(e) {
     y = (lFollowY - y) * friction;
     background.style.transition = '.3s'
     background.style.transform = 'translate(' + x + 'px, ' + y + 'px) scale(1.05)';
-    console.log(`lMouseX : ${lMouseX}, lFollowX : ${lFollowX}, x : ${x} - lMouseY : ${lMouseY}, lFollowY : ${lFollowY}, y : ${y}`)
+    //console.log(`lMouseX : ${lMouseX}, lFollowX : ${lFollowX}, x : ${x} - lMouseY : ${lMouseY}, lFollowY : ${lFollowY}, y : ${y}`)
 }
 
 function scrollRotate() {
@@ -46,3 +46,26 @@ function changeBackground() {
         background.style.backgroundSize = 'cover';
     }
 }
+
+
+//Collection "carousel"
+//.collection-section-disabled
+
+let collectionElement = document.querySelectorAll('.collection-section');
+
+collectionElement.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        switchSection(item, index);
+    });
+});
+
+//console.log(collectionElement);
+
+function switchSection(item, index) {
+    let sectionNum = index+1 >= collectionElement.length ? 0 : index+1;
+    item.classList.add('collection-section-disabled');
+    collectionElement[sectionNum].classList.remove('collection-section-disabled');
+
+}
+
+
