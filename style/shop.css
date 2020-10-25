@@ -22,7 +22,7 @@ h1 {
 h2 {
     font-size: 24px;
     color: #000000;
-    margin-top: 50px;
+    margin-top: 90px;
     margin-left: 60px;
 }
 
@@ -44,14 +44,14 @@ h2 {
   padding: 10px 5px;
   margin: 10px;
   background: rgb(230, 230, 230);
-  box-shadow: 5px 5px 25px rgb(0, 0, 0, 0.15);
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.15);
   border-radius: 5px;
   transition: 0.3s;
 }
 
 .column:hover {
     transform: scale(1.05);
-    box-shadow: 5px 5px 30px rgb(0, 0, 0, 0.30);
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.30);
 }
 
 img {
