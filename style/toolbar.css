@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
 
-body {
+
+/*==================== TOOLBAR ====================*/
+/** {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
-
-/*==================== TOOLBAR ====================*/
+}*/
 
 .body-pseudo-element:after {
     content:"";
@@ -52,6 +53,7 @@ body {
 }
 
 .toolbar-nav img {
+    box-sizing: content-box;
     display: block;
     background: #002944;
     width: 32px;
@@ -64,6 +66,7 @@ body {
 }
 
 .toolbar-nav div {
+    box-sizing: content-box;
     height: 2px;
     width: 32px;
     background: #707070;
@@ -72,8 +75,25 @@ body {
 
 /*==================== SIDENAV ====================*/
 
+/*Style de la sidenav*/
+.sidenav {
+    box-sizing: content-box;
+    z-index: 10;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff8f3;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 /*Style de la croix pour fermer la sidenav*/
 .sidenav a {
+    box-sizing: content-box;
     font-family: 'Montserrat', sans-serif;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -90,34 +110,21 @@ body {
     color: #759fbc;
 }
 
-/*Style de la sidenav*/
-.sidenav {
-    z-index: 10;
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #fff8f3;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
 /*Style des grands titres(h2) de la sidenav*/
 .sidenav h2 {
-    padding: 0px 0px 0px 0px;
+    margin: 25px 0;
     font-size: 32px;
     color: #a32f2f;
     display: block;
     transition: 0.3s;
     white-space: nowrap;
     line-height: 18px;
+    font-family: 'Cinzel', serif;
 }
 
 /*Style des sous-titres(h3) de la sidenav*/
 .sidenav h3 {
-    font-family: 'Montserrat', sans-serif;
+    margin: 25px 0;
     padding: 0px 0px 12px 32px;
     font-size: 24px;
     color: #a32f2f;
@@ -129,7 +136,6 @@ body {
 
 /*Style des textes des paragraphes de la sidenav*/
 .sidenav p {
-    font-family: 'Montserrat', sans-serif;
     padding: 0px 0px 6px 32px;
     font-size: 16px;
     color: #002944;
@@ -149,7 +155,6 @@ body {
 }
 
 .sidenav .icon{
-    display: inline-block;
     position: relative;
     width: 16px;
     height: 16px;

@@ -47,9 +47,9 @@ function closeAccess() {
 //Hide navbar
 let prevScrollpos = window.pageYOffset;
 let navbar = document.getElementById("navbar");
-console.log(navbar);
 
 window.onscroll = function() {
+    if(!navbar) return;
     let currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         navbar.style.top = "0";
