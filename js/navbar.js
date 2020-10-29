@@ -42,3 +42,19 @@ function closeAccess() {
     accessPanel.style.transform = 'scaleY(0)';
     accessOpenned = false;
 }
+
+
+//Hide navbar
+let prevScrollpos = window.pageYOffset;
+let navbar = document.getElementById("navbar");
+
+window.onscroll = function() {
+    if(!navbar) return;
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        navbar.style.top = "0";
+    } else {
+        navbar.style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+}

@@ -1,11 +1,18 @@
 /*==================== NAVBAR ====================*/
 
 header {
+    z-index: 3;
     height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.3s;
+}
+
+#navbar {
+    background: #002944;
+    position: fixed;
 }
 
 .header-nav {
@@ -44,13 +51,13 @@ header {
     background: white;
 }
 
-.header-nav .header-nav-link:hover:after {
+.header-nav .header-nav-link:hover:after, .header-nav .active::after {
     visibility: visible;
     transform: scaleX(1);
     transition: 0.2s ease;
 }
 
-.header-nav .header-nav-link:hover {
+.header-nav .header-nav-link:hover, .header-nav .active {
     opacity: 1;
 }
 
@@ -83,30 +90,32 @@ header {
 }
 
 .header-icon-lang img {
+    z-index: 501;
     position: absolute;
     height: 16px;
 }
 
 .header-icon-accessibility button {
+    z-index: 501;
     position: absolute;
 }
 
 .icon-lang-1 {
-    margin: 5px;
+    margin: 10px;
 }
 
 .icon-lang-2 {
-    margin: 40px;
+    margin: 45px;
 }
 
 .icon-lang-3 {
-    margin: 75px;
+    margin: 80px;
 }
 
 .icon-access-1 {
-    margin: 5px;
+    margin: 10px;
 }
 
 .icon-access-2 {
-    margin: 40px;
+    margin: 45px;
 }

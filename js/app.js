@@ -14,7 +14,7 @@ let friction = 1 / 10;
 window.addEventListener("mousemove", moveBackground);
 window.addEventListener("scroll", function() {
     scrollRotate(); 
-    changeBackground();
+    //changeBackground();
 });
 
 function moveBackground(e) {

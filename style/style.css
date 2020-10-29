@@ -42,7 +42,7 @@ body {
     position: absolute;
     bottom: 7%;
     left: 50%;
-    height: 25px;
+    height: 30px;
     transform: translate(-50%);
     animation: bounceAnim 1s infinite;
 }

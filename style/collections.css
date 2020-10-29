@@ -36,6 +36,8 @@ h2 {
     color: #A32F2F;
 }
 
+/*==================== SPLITTER ====================*/
+
 .splitter {
     display: block;
     height: 400px;
@@ -49,7 +51,7 @@ h2 {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 50px 0px;
+    padding: 200px 0px 50px;
     overflow: hidden;
 }
 
@@ -144,7 +146,7 @@ h2 {
 }
 
 
-/*============= Statue ==============*/
+/*============= Blurry Background ==============*/
 
 .section-2 {
     z-index: -1;

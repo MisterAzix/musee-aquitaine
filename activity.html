@@ -2,12 +2,16 @@
 <html lang="fr-FR">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>A l'affiche</title>
+        <meta name="viewport" content="width=1920px, initial-scale=1.0" />
+        <title>Activités - Le Musée D'Aquitaine</title>
+        <meta
+            name="description"
+            content="De nombreuses activités sont possible au musée d'Aquitaine."
+        />
 
         <link rel="icon" href="img/icon/website_logo.png" />
-        
-        <link rel="stylesheet" href="style/poster.css" />
+
+        <link rel="stylesheet" href="style/activity_WIP.css" />
         <link rel="stylesheet" href="style/loading.css" />
         <link rel="stylesheet" href="style/footer.css" />
         <link rel="stylesheet" href="style/navbar.css" />
@@ -15,6 +19,9 @@
     </head>
 
     <body>
+        <!-- Fixed Background -->
+        <section class="background"></section>
+
         <!-- Loading Screen -->
         <h1 class="loading-title">MUSÉE D'AQUITAINE</h1>
         <div class="loader-container"></div>
@@ -32,9 +39,11 @@
                         src="img/icon/website_logo.png"
                         alt="Logo"
                 /></a>
-                <a class="header-nav-link" href="exposition.html">Exposition</a>
-                <a class="header-nav-link" href="activity.html"
-                    >Visites et activités</a
+                <a class="header-nav-link" href="exposition.html"
+                    >Expositions</a
+                >
+                <a class="header-nav-link active" href="activity.html"
+                    >Activités</a
                 >
                 <a class="header-nav-link" href="collections.html"
                     >Collections</a
@@ -124,23 +133,25 @@
             <a href="javascript:void(0)" class="close-button">&times;</a>
 
             <h2 style="text-align: center">BILLETTERIE</h2>
-            <br />
+            <br>
             <h3>HORAIRES</h3>
+            <p>
+                Du mardi au dimanche, de 11 h à 18 h
+                <br>Fermé les lundis et jours fériés
+                <br>Excepté le 14 juillet et le 15 août
+            </p>
 
-            <p>Du mardi au dimanche, de 11 h à 18 h</p>
-            <p>Fermé les lundis et jours fériés</p>
-            <p>Excepté le 14 juillet et le 15 août</p>
-            <br />
             <h3>TARIFS</h3>
-
-            <p>Plein tarif : 5€</p>
-            <p>Tarif réduit : 3€</p>
-
-            <p style="font-weight: bold">Gratuit pour les :</p>
-            <p>&bull; Moins de 18 ans</p>
-            <p>&bull; Scolaire</p>
-            <p>&bull; Étudiants</p>
-            <p>&bull; Personnes handicapés et accompagnateur</p>
+            <p>
+                Plein tarif : 5€
+                <br>Tarif réduit : 3€
+                <br>
+                <br><span style="font-weight: bold">Gratuit pour les :</span>
+                <br>&bull; Moins de 18 ans
+                <br>&bull; Scolaire
+                <br>&bull; Étudiants
+                <br>&bull; Personnes handicapés et accompagnateur
+            </p>
         </div>
 
         <!--Sidenav des informations -->
@@ -149,7 +160,7 @@
             <a href="javascript:void(0)" class="close-button">&times;</a>
 
             <h2 style="text-align: center">CONTACT</h2>
-            <br />
+            <br>
             <h3>ADRESSE</h3>
 
             <p>20 Cours Pasteur, 33000 Bordeaux</p>
@@ -164,18 +175,19 @@
                 class="lien"
             />
 
-            <br />
             <h3>TÉLÉPHONE</h3>
+            <p>
+                MUSÉE - 05 56 01 51 00
+                <br>ACCUEIL DE GROUPE - 05 56 01 51 04
+                <br>ACCESSIBILITÉ - 05 56 01 51 03
+            </p>
 
-            <p>MUSÉE - 05 56 01 51 00</p>
-            <p>ACCUEIL DE GROUPE - 05 56 01 51 04</p>
-            <p>ACCESSIBILITÉ - 05 56 01 51 03</p>
-            <br />
             <h3>MAILS</h3>
-
-            <p>musaq@mairie-bordeaux.fr</p>
-            <p>service.mediation.aquitaine@mairie-bordeaux.fr</p>
-            <p>service.accueil@mairie-bordeaux.fr</p>
+            <p>
+                musaq@mairie-bordeaux.fr
+                <br>service.mediation.aquitaine@mairie-bordeaux.fr
+                <br>service.accueil@mairie-bordeaux.fr
+            </p>
         </div>
 
         <!--Sidenav de la barre de l'agenda-->
@@ -184,7 +196,7 @@
             <a href="javascript:void(0)" class="close-button">&times;</a>
 
             <h2 style="text-align: center">AGENDA</h2>
-            <br />
+            <br>
             <h3>ACTIVITÉ DU JOUR</h3>
 
             <img
@@ -195,16 +207,14 @@
                 id="activite"
             />
 
-            <p style="font-weight: bold">
-                Visite commentée - exposition "Comme une image"
-            </p>
-            <br />
-            <p>Les audioguides sont temporairement indisponibles.</p>
             <p>
-                L'application "Musée d'Aquitaine" est téléchargeable <br />
-                sur Google Play Store
+                <span style="font-weight: bold">Visite commentée - exposition "Comme une image"</span>
+                <br>
+                <br>Les audioguides sont temporairement indisponibles.
+                <br>L'application "Musée d'Aquitaine" est téléchargeable 
+                <br>sur Google Play Store.
             </p>
-            <br />
+
             <!--Lien vers la page Google Play du Musée d'Aquitaine-->
             <a
                 class="lien"
@@ -241,149 +251,7 @@
 
         <!--========================================-->
 
-        <section class="section-1">
-            <h1>À L'AFFICHE</h1>
-
-            <h2>
-                Exposition « Comme une image. L’enfance au XIXe siècle dans les
-                collections du musée Goupil »
-            </h2>
-
-            <div class="div-1">
-                <div>
-                    <img class="img-1" src="img/section/comme-une-image.jpg" />
-                    <p class="description">Jusqu'au 3 janvier 2021.</p>
-                    <p>Entrée gratuite.</p>
-                </div>
-
-                <div class="txt-img">
-                    <p>
-                        Le XIXe siècle est l’époque où l’enfant acquiert
-                        définitivement une place à part entière dans la société.
-                        Il constitue un public à lui seul : livres, revues,
-                        jouets, vêtements sont créés à son usage et il devient
-                        lui-même un sujet privilégié pour de nombreux artistes.
-                        <br />
-                        Les « images » reproduites et diffusées par l’éditeur
-                        d'art Goupil témoignent du statut de l’enfant et de la
-                        famille à cette époque. Pour la société bourgeoise,
-                        l’enfant est surtout la promesse d’une promotion sociale
-                        : par sa réussite scolaire et professionnelle, il doit
-                        témoigner de l’ascension de toute la famille.
-                        <br />
-                        Les représentations de l’enfance reflètent la réalité du
-                        XIXe siècle et en sont un miroir fidèle ; les fillettes
-                        jouent à la poupée et à la dînette, les garçonnets se
-                        déguisent en petits soldats.
-                        <br /><br /><br /><br />
-                        Composée d’environ 80 estampes, photographies et objets,
-                        l’exposition témoigne de cette époque autour des thèmes
-                        de la petite enfance, de l’éducation mais aussi du
-                        travail des enfants et des enjeux économiques. Elle fait
-                        aussi écho à la place de l’enfant dans notre société du
-                        XXIe siècle.
-                    </p>
-                </div>
-            </div>
-
-            <div class="hugopratt">
-                <div class="txt-img">
-                    <h2>Prochainement:</h2>
-                    <p>Hugo Pratt, Lignes d'horizon</p>
-                </div>
-                <img class="img-1" src="img/section/hugo-pratt.png" />
-            </div>
-        </section>
-
-        <section class="section-2">
-            <div class="salle-rouge-parent">
-                <img
-                    class="salle-rouge"
-                    src="img/section/salle-rouge-banc.jpg"
-                />
-            </div>
-
-            <div class="texte-bas">
-                <div class="visites">
-                    <h3>Visites commentées de l’exposition</h3>
-                    <p class="text-visites">
-                        Du 6 septembre au 15 novembre, tous les dimanches à 15 h
-                        30
-                        <br />
-                        Et les mercredis 16 et 30 septembre, 14 et 28 octobre, à
-                        15 h.
-                        <br />
-                        <br />
-                        Visite en L.S.F le 14 octobre à 16 h 30
-                        <br />
-                        (sur réservation à l'adresse suivante
-                        p.chauveau-vindrinet@mairie-bordeaux.fr)
-                    </p>
-                </div>
-                <div class="activités-famille">
-                    <h3 class="titre">
-                        Activités famille - réservation obligatoire
-                    </h3>
-
-                    <h4>Atelier "L'estampe"</h4>
-
-                    <p class="estampe">
-                        (7/11 ans). Présence obligatoire d'un adulte.
-                        <br />
-                        Consultez les dates et réservez sur Eventbrite
-                        <br />
-                        <br />
-                    </p>
-
-                    <h4>"M comme Marionnette"</h4>
-
-                    <p class="marionette">
-                        (7/11 ans). Présence obligatoire d'un adulte.
-                        <br />
-                        Consultez les dates et réservez sur Eventbrite
-                        <br />
-                        <br />
-                    </p>
-
-                    <h4>"Tombé dans l'armoire"</h4>
-
-                    <p class="marionette">
-                        (7/11 ans). Présence obligatoire d'un adulte.
-                        <br />
-                        Réservation à partir du 20 août : 05 56 01 51 04
-                    </p>
-                </div>
-            </div>
-
-            <div class="video-radio">
-                <div class="video-box">
-                    <a
-                        href="https://www.youtube.com/watch?v=pCvIlQyZTPI"
-                        target="_blank"
-                    >
-                        <div class="txt-video">
-                            <h4 class="titre-video">Regarder la vidéo</h4>
-                            <img class="play" src="img/icon/play_white.png" />
-                        </div>
-                    </a>
-                </div>
-                <a
-                    href="http://lagranderadio.fr/sons/2020/INTERVIEW-Comme-une-image-Musee-Goupil-Regine-Bigorne-25-05-2020-copyright-la-grande-radio-2020.mp3"
-                    target="_blank"
-                >
-                    <div class="txt-radio">
-                        <img class="radio" src="img/icon/radio_white.png" />
-                        <h4 class="titre-radio">
-                            Écouter l'interview sur lagranderadio.fr
-                        </h4>
-                    </div>
-                </a>
-            </div>
-        </section>
-
-        <!--========================================-->
-
-        <div class="splitter"></div>
+        <h1>WORK IN PROGRESS...</h1>
 
         <!--========================================-->
 
@@ -438,9 +306,7 @@
 
                     <!-- NAVBAR -->
                     <div class="navbar">
-                        <a href="exposition.html" class="header-active"
-                            >Exposition</a
-                        >
+                        <a href="exposition.html">Expositions</a>
                         <a href="activity.html">Activités</a>
                         <a href="collections.html">Collections</a>
                         <a href="shop.html">Boutique</a>

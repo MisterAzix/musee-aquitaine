@@ -1,159 +1,531 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boutique - Le Musée D'Aquitaine</title>
+        <meta 
+            name="description" 
+            content="Une envie de souvenir... Découvrez la boutique du musée d'Aquitaine."
+        />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style\shop.css">
-    <link rel="stylesheet" href="style/loading.css" />
-</head>
+        <link rel="icon" href="img/icon/website_logo.png" />
+        
+        <link rel="stylesheet" href="style/shop.css">
+        <link rel="stylesheet" href="style/loading.css" />
+        <link rel="stylesheet" href="style/footer.css" />
+        <link rel="stylesheet" href="style/navbar.css" />
+        <link rel="stylesheet" href="style/toolbar.css" />
+    </head>
 
-<body>
-    <!-- Loading Screen -->
-    <h1 class="loading-title">MUSÉE D'AQUITAINE</h1>
-    <div class="loader-container"></div>
-    <section class="loading-section loading-section-right"></section>
-    <section class="loading-section loading-section-left"></section>
-    <script src="js/loading.js"></script>
+    <body>
+        <!-- Loading Screen -->
+        <h1 class="loading-title">MUSÉE D'AQUITAINE</h1>
+        <div class="loader-container"></div>
+        <section class="loading-section loading-section-right"></section>
+        <section class="loading-section loading-section-left"></section>
+        <script src="js/loading.js"></script>
 
-    <h1>Boutique</h1>
-    
-    <div class="search-bar">
-        <input type="search" id="site-search" placeholder="Rechercher un produit">
-        <!-- <button>Rechercher un produit</button> -->
-    </div>
+        <!--========================================-->
 
-    <h2>Idées cadeaux</h2>
+        <header id="navbar">
+            <nav class="header-nav">
+                <a href="index.html"
+                    ><img
+                        class="header-logo"
+                        src="img/icon/website_logo.png"
+                        alt="Logo"
+                /></a>
+                <a class="header-nav-link" href="exposition.html">Expositions</a>
+                <a class="header-nav-link" href="activity.html">Activités</a>
+                <a class="header-nav-link" href="collections.html">Collections</a>
+                <a class="header-nav-link active" href="shop.html">Boutique</a>
+            </nav>
+            <div class="header-nav-icon">
+                <div class="header-nav-icon-lang">
+                    <img
+                        id="lang-icon"
+                        class="header-icon"
+                        src="img/icon/lang_icon.png"
+                        alt="Choix langue"
+                    />
+                    <div class="header-icon-lang">
+                        <img
+                            class="icon-lang-1"
+                            src="img/flag/france_flag.jpg"
+                            alt="Drapeau France"
+                        />
+                        <img
+                            class="icon-lang-2"
+                            src="img/flag/uk_flag.jpg"
+                            alt="Drapeau Angleterre"
+                        />
+                        <img
+                            class="icon-lang-3"
+                            src="img/flag/spain_flag.jpg"
+                            alt="Drapeau Espagne"
+                        />
+                    </div>
+                </div>
 
-    <div class="row">
-        <div class="column">
-            <img src="img\shop\marque page.jpg" alt="Marque page" style="width:100%">
-            <p>Marque page laiton rosace</p>
-            <p>9,50€</p>
-        </div>
-        <div class="column">
-            <img src="img\shop\Foulard Les colonies.jpg" alt="Foulards" style="width:100%">
-            <p>Foulard "Les colonies"</p>
-            <p>12,90€</p>
-        </div>
-        <div class="column">
-            <img src="img\shop\parapluie.jpg" alt="parapluie" style="width:100%">
-            <p>Parapluie</p>
-            <p>29,90€</p>
-        </div>
-        <div class="column">
-            <img src="img\shop\Coffret plaque relief biscuit.jpg" alt="plaque relief" style="width:100%">
-            <p>Coffret plaque relief biscuit</p>
-            <p>20€</p>
-        </div>
-    </div>
+                <div class="header-nav-icon-accessibility">
+                    <img
+                        id="accessibility-icon"
+                        class="header-icon"
+                        src="img/icon/accessibility_icon.png"
+                        alt="Accessibilité"
+                    />
+                    <div class="header-icon-accessibility">
+                        <button class="icon-access-1">A+</button>
+                        <button class="icon-access-2">A-</button>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <div class="row">
-        <div class="column">
-            <img src="img\shop\Trousse rayée - La Garonne.jpg" alt="Trousse rayée - La Garonne" style="width:100%">
-            <p>Trousse rayée - La Garonne</p>
-            <p>11€</p>
-        </div>
-        <div class="column">
-            <img src="img\shop\Miroir.jpg" alt="Miroir" style="width:100%">
-            <p>Miroir</p>
-            <p>3.50€</p>
-        </div>
-        <div class="column">
-            <img src="img\shop\Pendentif Visitation.jpg" alt="Pendentif" style="width:100%">
-            <p>Pendentif "Visitation"</p>
-            <p>11,50€</p>
-        </div>
-        <div class="column">
-            <img src="img\shop\Accroche sac.jpg" alt="Accroche sac" style="width:100%">
-            <p>Foulard "Accroche sac"</p>
-            <p>4,50€</p>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="column">
-            <img src="img\shop\Coffret plaque couleur vitrail.jpg" alt="Coffret plaque couleur vitrail"
-                style="width:100%">
-            <p>Coffret plaque couleur vitrail</p>
-            <p>25€</p>
-        </div>
-        <div class="column">
-            <img src="img\shop\Bracelets olfactif.jpg" alt="Bracelets olfactif" style="width:100%">
-            <p>Bracelets olfactif</p>
-            <p>3.50€</p>
-        </div>
-        <div class="column">
-            <img src="img\shop\Chargeur - Batterie 2400mAh.jpg" alt="Batterie" style="width:100%">
-            <p>Chargeur - Batterie 2400mAh</p>
-            <p>17€</p>
-        </div>
-        <div class="column">
-            <img src="img\shop\Boule de décoration prestige.jpg" alt="Boules décoration" style="width:100%">
-            <p>Boule de décoration prestige</p>
-            <p>6€</p>
-        </div>
-    </div>
+        <!--========================================-->
 
-    <h2>Librairies</h2>
+        <section class="black-overlay"></section>
 
-    <div class="row">
-        <div class="column">
-            <img src="img\shop\Etat des lieux n°1.jpg" alt="Etat des lieux n°1"
-                style="width:100%">
-            <p>État des lieux n°1</p>
-            <p>18€</p>
-        </div>
-        <div class="column">
-            <img src="img\shop\1917 Voilà les Américains !.jpg" alt="1917 Voilà les Américains !" style="width:100%">
-            <p>1917 Voilà les Américains !</p>
-            <p>25€</p>
-        </div>
-        <div class="column">
-            <img src="img\shop\L'Or des Akan.jpg" alt="L'Or des Akan" style="width:100%">
-            <p>L'Or des Akan</p>
-            <p>8,50€</p>
-        </div>
-        <div class="column">
-            <img src="img\shop\Vous me voyez.jpg" alt="Vous me voyez ?" style="width:100%">
-            <p>Vous me voyez ?</p>
-            <p>5€</p>
-        </div>
-        <div class="column">
-            <img src="img\shop\Amis du musée d'Aquitaine.png" alt="Amis du musée d'Aquitaine" style="width:100%">
-            <p>Amis du musée d'Aquitaine</p>
-            <p>8€</p>
-        </div>
-    </div>
+        <!-- Navbar -->
+        <nav class="toolbar-nav">
+            <img
+                id="ticket-button"
+                src="img/icon/ticket_icon.png"
+                alt="Billetterie"
+                style="cursor: pointer"
+            />
+            <div class="spliter"></div>
+            <img
+                id="info-button"
+                src="img/icon/info_icon.png"
+                alt="Informations"
+                style="cursor: pointer"
+            />
+            <div class="spliter"></div>
+            <img
+                id="agenda-button"
+                src="img/icon/agenda_icon.png"
+                alt="Agenda"
+                style="cursor: pointer"
+            />
+            <div class="spliter"></div>
+            <img
+                id="search-button"
+                src="img/icon/search_icon.png"
+                alt="Recherche"
+                style="cursor: pointer"
+            />
+        </nav>
 
-        <h2>Tirages de photographies de Félix Arnaudin</h2>
-    
+        <!--Sidenav de la barre de la billetterie-->
+        <div id="billetterie" class="sidenav">
+            <!--Script qui permet de ferme la sidenav-->
+            <a href="javascript:void(0)" class="close-button">&times;</a>
+
+            <h2 style="text-align: center">BILLETTERIE</h2>
+            <br>
+            <h3>HORAIRES</h3>
+            <p>
+                Du mardi au dimanche, de 11 h à 18 h
+                <br>Fermé les lundis et jours fériés
+                <br>Excepté le 14 juillet et le 15 août
+            </p>
+
+            <h3>TARIFS</h3>
+            <p>
+                Plein tarif : 5€
+                <br>Tarif réduit : 3€
+                <br>
+                <br><span style="font-weight: bold">Gratuit pour les :</span>
+                <br>&bull; Moins de 18 ans
+                <br>&bull; Scolaire
+                <br>&bull; Étudiants
+                <br>&bull; Personnes handicapés et accompagnateur
+            </p>
+        </div>
+
+        <!--Sidenav des informations -->
+        <div id="informations" class="sidenav">
+            <!--Script qui permet de ferme la sidenav-->
+            <a href="javascript:void(0)" class="close-button">&times;</a>
+
+            <h2 style="text-align: center">CONTACT</h2>
+            <br>
+            <h3>ADRESSE</h3>
+
+            <p>20 Cours Pasteur, 33000 Bordeaux</p>
+
+            <!--https://www.google.com/maps/d/viewer?mid=10Is1WKPs9bVsvy-pYXgXqHtqOsg&msa=0&hl=fr&ie=UTF8&t=m&source=embed&ll=44.83864724610595%2C-0.5753659999999972&spn=0.010651%2C0.018239&z=15-->
+            <a class="lien" href="https://cutt.ly/2gz07uG" target="_blank"
+                >&rarr; Google Maps</a
+            >
+            <img
+                src="img\icon\reseaux\google-maps_icon.png"
+                class="icon"
+                class="lien"
+            />
+
+            <h3>TÉLÉPHONE</h3>
+            <p>
+                MUSÉE - 05 56 01 51 00
+                <br>ACCUEIL DE GROUPE - 05 56 01 51 04
+                <br>ACCESSIBILITÉ - 05 56 01 51 03
+            </p>
+
+            <h3>MAILS</h3>
+            <p>
+                musaq@mairie-bordeaux.fr
+                <br>service.mediation.aquitaine@mairie-bordeaux.fr
+                <br>service.accueil@mairie-bordeaux.fr
+            </p>
+        </div>
+
+        <!--Sidenav de la barre de l'agenda-->
+        <div id="agenda" class="sidenav">
+            <!--Script qui permet de ferme la sidenav-->
+            <a href="javascript:void(0)" class="close-button">&times;</a>
+
+            <h2 style="text-align: center">AGENDA</h2>
+            <br>
+            <h3>ACTIVITÉ DU JOUR</h3>
+
+            <img
+                src="img\section\visite_familiale.jpg"
+                alt="Visite familiale guidée"
+                height="200"
+                width="436"
+                id="activite"
+            />
+
+            <p>
+                <span style="font-weight: bold">Visite commentée - exposition "Comme une image"</span>
+                <br>
+                <br>Les audioguides sont temporairement indisponibles.
+                <br>L'application "Musée d'Aquitaine" est téléchargeable 
+                <br>sur Google Play Store.
+            </p>
+
+            <!--Lien vers la page Google Play du Musée d'Aquitaine-->
+            <a
+                class="lien"
+                href="https://play.google.com/store/apps/details?id=fr.mbdx.maq"
+                target="_blank"
+                >&rarr; Google Play</a
+            >
+            <img
+                src="img\icon\reseaux\google-play_icon.png"
+                class="icon"
+                class="lien"
+            />
+        </div>
+
+        <!--Sidenav de la barre de recherche-->
+        <div id="recherche" class="sidenav">
+            <!--Script qui permet de ferme la sidenav-->
+            <a href="javascript:void(0)" class="close-button">&times;</a>
+
+            <h2 style="text-align: center">RECHERCHE</h2>
+            <br />
+            <div class="search-bar">
+                <input
+                    type="search"
+                    id="site-search"
+                    placeholder="Que recherchez-vous ?"
+                />
+                <!-- <button>Rechercher un produit</button> -->
+            </div>
+        </div>
+
+        <!--Lien vers le script qui permet l'ouverture et la fermeture de la toolbar-->
+        <script src="js/toolbar.js"></script>
+
+        <!--========================================-->
+
+        <h1 class="h1-margin-top">Boutique</h1>
+        
+        <div class="search-bar">
+            <input type="search" id="site-search" placeholder="Rechercher un produit">
+            <!-- <button>Rechercher un produit</button> -->
+        </div>
+
+        <h2>Idées cadeaux</h2>
+
         <div class="row">
             <div class="column">
-                <img class="photographies" src="img\shop\Félix Arnaudin, autoportrait vers 1876.jpg" alt="Félix Arnaudin, autoportrait vers 1876"
-                    >
-                <br>Félix Arnaudin, autoportrait vers 1876</br>
-                <p>100€</p>
+                <img src="img\shop\marque page.jpg" alt="Marque page" style="width:100%">
+                <p>Marque page laiton rosace</p>
+                <p>9,50€</p>
             </div>
             <div class="column">
-                <img class="photographies" src="img\shop\Grands pins de Guentes, 8 octobre 1890.jpg" alt="Grands pins de Guentes, 8 octobre 1890">
-                <br>Grands pins de Guentes, 8 octobre 1890</br>
-                <p>100€</p>
+                <img src="img\shop\Foulard Les colonies.jpg" alt="Foulards" style="width:100%">
+                <p>Foulard "Les colonies"</p>
+                <p>12,90€</p>
             </div>
             <div class="column">
-                <img class="photographies" src="img\shop\La Vignole, lapas roulés 16 janvier 1896.jpg" alt="La Vignole, lapas roulés 16 janvier 1896">
-                <br>La Vignole, lapas roulés 16 janvier 1896</br>
-                <p>100€</p>
+                <img src="img\shop\parapluie.jpg" alt="parapluie" style="width:100%">
+                <p>Parapluie</p>
+                <p>29,90€</p>
             </div>
             <div class="column">
-                <img class="photographies" src="img\shop\Résiniers, Bruze, Manciet, chien, 15 octobre 1891.jpg" alt="Résiniers, Bruze, Manciet, chien, 15 octobre 1891" >
-                <br>Résiniers, Bruze, Manciet, chien, 15 octobre 1891</br>
-                <p>100€</p>
+                <img src="img\shop\Coffret plaque relief biscuit.jpg" alt="plaque relief" style="width:100%">
+                <p>Coffret plaque relief biscuit</p>
+                <p>20€</p>
             </div>
         </div>
 
+        <div class="row">
+            <div class="column">
+                <img src="img\shop\Trousse rayée - La Garonne.jpg" alt="Trousse rayée - La Garonne" style="width:100%">
+                <p>Trousse rayée - La Garonne</p>
+                <p>11€</p>
+            </div>
+            <div class="column">
+                <img src="img\shop\Miroir.jpg" alt="Miroir" style="width:100%">
+                <p>Miroir</p>
+                <p>3.50€</p>
+            </div>
+            <div class="column">
+                <img src="img\shop\Pendentif Visitation.jpg" alt="Pendentif" style="width:100%">
+                <p>Pendentif "Visitation"</p>
+                <p>11,50€</p>
+            </div>
+            <div class="column">
+                <img src="img\shop\Accroche sac.jpg" alt="Accroche sac" style="width:100%">
+                <p>Foulard "Accroche sac"</p>
+                <p>4,50€</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="column">
+                <img src="img\shop\Coffret plaque couleur vitrail.jpg" alt="Coffret plaque couleur vitrail"
+                    style="width:100%">
+                <p>Coffret plaque couleur vitrail</p>
+                <p>25€</p>
+            </div>
+            <div class="column">
+                <img src="img\shop\Bracelets olfactif.jpg" alt="Bracelets olfactif" style="width:100%">
+                <p>Bracelets olfactif</p>
+                <p>3.50€</p>
+            </div>
+            <div class="column">
+                <img src="img\shop\Chargeur - Batterie 2400mAh.jpg" alt="Batterie" style="width:100%">
+                <p>Chargeur - Batterie 2400mAh</p>
+                <p>17€</p>
+            </div>
+            <div class="column">
+                <img src="img\shop\Boule de décoration prestige.jpg" alt="Boules décoration" style="width:100%">
+                <p>Boule de décoration prestige</p>
+                <p>6€</p>
+            </div>
+        </div>
 
-</body>
+        <h2>Librairies</h2>
 
+        <div class="row">
+            <div class="column">
+                <img src="img\shop\Etat des lieux n°1.jpg" alt="Etat des lieux n°1"
+                    style="width:100%">
+                <p>État des lieux n°1</p>
+                <p>18€</p>
+            </div>
+            <div class="column">
+                <img src="img\shop\1917 Voilà les Américains !.jpg" alt="1917 Voilà les Américains !" style="width:100%">
+                <p>1917 Voilà les Américains !</p>
+                <p>25€</p>
+            </div>
+            <div class="column">
+                <img src="img\shop\L'Or des Akan.jpg" alt="L'Or des Akan" style="width:100%">
+                <p>L'Or des Akan</p>
+                <p>8,50€</p>
+            </div>
+            <div class="column">
+                <img src="img\shop\Vous me voyez.jpg" alt="Vous me voyez ?" style="width:100%">
+                <p>Vous me voyez ?</p>
+                <p>5€</p>
+            </div>
+            <div class="column">
+                <img src="img\shop\Amis du musée d'Aquitaine.png" alt="Amis du musée d'Aquitaine" style="width:100%">
+                <p>Amis du musée d'Aquitaine</p>
+                <p>8€</p>
+            </div>
+        </div>
+
+            <h2>Tirages de photographies de Félix Arnaudin</h2>
+        
+            <div class="row">
+                <div class="column">
+                    <img class="photographies" src="img\shop\Félix Arnaudin, autoportrait vers 1876.jpg" alt="Félix Arnaudin, autoportrait vers 1876"
+                        >
+                    <br>Félix Arnaudin, autoportrait vers 1876</br>
+                    <p>100€</p>
+                </div>
+                <div class="column">
+                    <img class="photographies" src="img\shop\Grands pins de Guentes, 8 octobre 1890.jpg" alt="Grands pins de Guentes, 8 octobre 1890">
+                    <br>Grands pins de Guentes, 8 octobre 1890</br>
+                    <p>100€</p>
+                </div>
+                <div class="column">
+                    <img class="photographies" src="img\shop\La Vignole, lapas roulés 16 janvier 1896.jpg" alt="La Vignole, lapas roulés 16 janvier 1896">
+                    <br>La Vignole, lapas roulés 16 janvier 1896</br>
+                    <p>100€</p>
+                </div>
+                <div class="column">
+                    <img class="photographies" src="img\shop\Résiniers, Bruze, Manciet, chien, 15 octobre 1891.jpg" alt="Résiniers, Bruze, Manciet, chien, 15 octobre 1891" >
+                    <br>Résiniers, Bruze, Manciet, chien, 15 octobre 1891</br>
+                    <p>100€</p>
+                </div>
+            </div>
+
+
+            <!--========================================-->
+
+            <div class="splitter"></div>
+
+            <!--========================================-->
+
+
+            <footer>
+                <div class="footer-top-section">
+                    <div class="footer-left-box">
+                        <h4>Nous contacter</h4>
+                        <p>
+                            Musée d'Aquitaine<br />
+                            <br />20 cours Pasteur<br />
+                            <br />33000 Bordeaux<br />
+                            <br /><br />
+                            <br />Téléphone Accueil :<br />
+                            <br />05 56 01 51 00
+                            <br />
+                        </p>
+                    </div>
+                    <div class="footer-right-box">
+                        <!-- SOCIAL NETWORK -->
+                        <div class="social-network">
+                            <h4>Suivez nous sur :</h4>
+
+                            <div class="social-network-icon">
+                                <a href="https://www.instagram.com/musee_aquitaine/"
+                                    ><img
+                                        src="img/icon/reseaux/instagram_icon_color.png"
+                                        alt="Instagram"
+                                /></a>
+                                <a href="https://twitter.com/MuseeAquitaine"
+                                    ><img
+                                        src="img/icon/reseaux/twitter_icon_color.png"
+                                        alt="Twitter"
+                                /></a>
+                                <a href="https://www.facebook.com/musee.aquitaine/"
+                                    ><img
+                                        src="img/icon/reseaux/facebook_icon_color.png"
+                                        alt="Facebook"
+                                /></a>
+                                <a href="https://www.pinterest.fr/museeaquitaine/"
+                                    ><img
+                                        src="img/icon/reseaux/pinterest_icon_color.png"
+                                        alt="Pinterest"
+                                /></a>
+                                <a
+                                    href="https://www.youtube.com/channel/UCNmf4zwWQL7YuFh6iGJi4GA"
+                                    ><img
+                                        src="img/icon/reseaux/youtube_icon_color.png"
+                                        alt="Youtube"
+                                /></a>
+                            </div>
+                        </div>
+
+                        <!-- NAVBAR -->
+                        <div class="navbar">
+                            <a href="exposition.html">Expositions</a>
+                            <a href="activity.html">Activités</a>
+                            <a href="collections.html">Collections</a>
+                            <a href="shop.html">Boutique</a>
+                        </div>
+
+                        <!-- EXTERNAL LINK -->
+                        <div class="external-link">
+                            <a href="http://www.musee-aquitaine-bordeaux.fr/fr/"
+                                >Bordeaux.fr ➚</a
+                            >
+                            <a
+                                href="http://www.musee-aquitaine-bordeaux.fr/fr/presse"
+                                >Agenda Ville ➚</a
+                            >
+                            <a
+                                href="http://www.musee-aquitaine-bordeaux.fr/fr/presse"
+                                >Info Culture ➚</a
+                            >
+                        </div>
+
+                        <!-- NEWSLETTER -->
+                        <div class="newsletter">
+                            <h4>Recevez nos actualités</h4>
+                            <div class="container">
+                                <input
+                                    class="newsletter-input"
+                                    type="text"
+                                    placeholder="Adresse mail"
+                                    name="mail"
+                                    required
+                                />
+                                <a class="submit-button" href="">Je m'inscris</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom-section">
+                    <div class="footer-flex">
+                        <div>
+                            <a
+                                href="http://www.musee-aquitaine-bordeaux.fr/fr/article/privatisation"
+                                >Privatisation</a
+                            >
+                        </div>
+                        <section class="footer-split"></section>
+                        <div>
+                            <a
+                                href="http://www.musee-aquitaine-bordeaux.fr/fr/nos-partenaires"
+                                >Nos partenaires</a
+                            >
+                        </div>
+                        <section class="footer-split"></section>
+                        <div>
+                            <a
+                                href="http://www.musee-aquitaine-bordeaux.fr/fr/soutenez-le-musee"
+                                >Soutenez le Musée</a
+                            >
+                        </div>
+                        <section class="footer-split"></section>
+                        <div>
+                            <a
+                                href="http://www.musee-aquitaine-bordeaux.fr/fr/sitemap"
+                                >Plan du site</a
+                            >
+                        </div>
+                        <section class="footer-split"></section>
+                        <div>
+                            <a
+                                href="http://www.musee-aquitaine-bordeaux.fr/fr/presse"
+                                >Presse</a
+                            >
+                        </div>
+                        <section class="footer-split"></section>
+                        <div>
+                            <a
+                                href="http://www.musee-aquitaine-bordeaux.fr/fr/article/mentions-legales"
+                                >Mentions légales</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!--Lien vers le script qui permet l'ouverture et la fermeture de la toolbar-->
+            <script src="js/toolbar.js"></script>
+            <!-- Navbar -->
+            <script src="js/navbar.js"></script>
+
+    </body>
 </html>
