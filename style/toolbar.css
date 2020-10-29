@@ -89,6 +89,7 @@
     transition: 0.5s;
     padding-top: 60px;
     font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
 }
 
 /*Style de la croix pour fermer la sidenav*/
