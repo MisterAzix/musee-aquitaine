@@ -51,13 +51,13 @@ header {
     background: white;
 }
 
-.header-nav .header-nav-link:hover:after {
+.header-nav .header-nav-link:hover:after, .header-nav .active::after {
     visibility: visible;
     transform: scaleX(1);
     transition: 0.2s ease;
 }
 
-.header-nav .header-nav-link:hover {
+.header-nav .header-nav-link:hover, .header-nav .active {
     opacity: 1;
 }
 
