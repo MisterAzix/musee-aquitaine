@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #002944;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.background {
+    position: fixed; 
+    z-index: -1;
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 25vh;
+    font-size: 4em;
+    font-family: 'Cinzel', serif;
+    color: #A32F2F;
+    font-weight: 500;
+}
+
+.splitter {
+    display: block;
+    height: 400px;
+}
+
