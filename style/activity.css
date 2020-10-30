@@ -53,12 +53,7 @@ h2 {
     overflow: hidden;
 }
 
-.demain {
-    font-size: 2em;
-    margin-bottom: 50px;
-}
-
-.activites {
+.activity {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -66,27 +61,39 @@ h2 {
     margin: 100px 100px;
     height: auto;
     line-height: 30px;
-    text-align: end;
+}
+
+.activity h2 {
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.activity img {
+    max-height: 100px;
+    width: 1000px;
+    object-fit: cover;   
 }
 
 .description {
+    width: 1000px;
     margin-bottom: 50px;
     margin-top: 10px;
-    text-align: left;
-    align-items: left;
-}
-
-.rois-angleterre .description {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-
+    justify-content: space-between;
 }
 
-.activites img {
-    height: 90px;
-    width: 1000px;
-    object-fit: cover;   
+.description p {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.description .description-hour {
+    color: #A32F2F;
+}
+
+.description span {
+    font-weight: normal;
+    font-style: italic;
 }
 
 .rois-angleterre {
