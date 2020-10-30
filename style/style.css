@@ -108,6 +108,55 @@ body {
     width: 250px;
 }
 
+/*==================== WHEELS ====================*/
+
+.wheel {
+    position: absolute;
+    transform-origin: center center;
+}
+
+.wheel-1 {
+    top: -300px;
+    right: -300px;
+    width: 600px;
+}
+
+.wheel-2 {
+    bottom: 100px;
+    left: -300px;
+    width: 600px;
+}
+
+.wheel-3 {
+    top: 200px;
+    right: -300px;
+    width: 400px;
+}
+
+.wheel-4 {
+    top: -300px;
+    left: -100px;
+    width: 500px;
+}
+
+.wheel-5 {
+    top: -20px;
+    right: -50px;
+    width: 200px;
+}
+
+.wheel-6 {
+    bottom: -150px;
+    left: -200px;
+    width: 400px;
+}
+
+.wheel-7 {
+    top: -150px;
+    right: 300px;
+    width: 300px;
+}
+
 /*==================== SECTION 1 ====================*/
 
 .exposition {
@@ -122,22 +171,6 @@ body {
 .exposition h3 {
     color: #a32f2f;
     margin-top: 25px;
-}
-
-.top-weel {
-    position: absolute;
-    top: -300px;
-    right: -300px;
-    width: 600px;
-    transform-origin: center center;
-}
-
-.bottom-weel {
-    position: absolute;
-    bottom: 100px;
-    left: -300px;
-    width: 600px;
-    transform-origin: center center;
 }
 
 .section-p {
@@ -220,7 +253,7 @@ body {
     color: #a32f2f;
 }
 
-.activity img {
+.activity-img {
     display: block;
     width: 974px;
     height: auto;
