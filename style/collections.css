@@ -43,6 +43,25 @@ h2 {
     height: 400px;
 }
 
+/*==================== WHEELS ====================*/
+
+.wheel {
+    position: absolute;
+    transform-origin: center center;
+}
+
+.wheel-1 {
+    bottom: 550px;
+    left: -100px;
+    width: 300px;
+}
+
+.wheel-2 {
+    bottom: 100px;
+    right: -200px;
+    width: 400px;
+}
+
 /*============= Statue ==============*/
 
 

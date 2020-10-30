@@ -36,9 +36,37 @@ h2 {
     color: #A32F2F;
 }
 
+/*==================== SPLITTER ====================*/
+
 .splitter {
     display: block;
     height: 400px;
+}
+
+/*==================== WHEELS ====================*/
+
+.wheel {
+    position: absolute;
+    transform-origin: center center;
+}
+
+.wheel-1 {
+    bottom: -300px;
+    left: -100px;
+    width: 500px;
+}
+
+.wheel-2 {
+    top: 500px;
+    right: -200px;
+    width: 400px;
+}
+
+
+.wheel-3 {
+    top: 200px;
+    left: -100px;
+    width: 300px;
 }
 
 /*============= Section 1 ==============*/

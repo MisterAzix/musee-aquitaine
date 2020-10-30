@@ -44,23 +44,26 @@ h2 {
     height: 400px;
 }
 
-/*============= Grande Section 1 ==============*/
+/*============= WHEELS ==============*/
 
-.top-weel {
+.wheel {
     position: absolute;
+    transform-origin: center center;
+}
+
+.wheel-1 {
     top: -300px;
     right: -300px;
     width: 600px;
-    transform-origin: center center;
 }
 
-.bottom-weel {
-    position: absolute;
-    bottom: 50px;
-    left: -400px;
-    width: 550px;
-    transform-origin: center center;
+.wheel-2 {
+    bottom: 100px;
+    left: -200px;
+    width: 400px;
 }
+
+/*============= Grande Section 1 ==============*/
 
 .grande-section-1 {
     background-color: #FFF8F3;
@@ -70,6 +73,7 @@ h2 {
     padding: 200px 0px 50px;
     overflow: hidden;
 }
+
 /*============= section 1 ==============*/
 
 
