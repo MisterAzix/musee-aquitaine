@@ -104,6 +104,10 @@ body {
     background: #a32f2f;
 }
 
+.shop-access {
+    width: 250px;
+}
+
 /*==================== SECTION 1 ====================*/
 
 .exposition {
@@ -301,54 +305,54 @@ body {
     height: auto;
     color: #707070;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     padding: 0 100px;
 }
 
-.shop-section-disabled {
-    display: none;
+.shop-description {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
-.shop h3 {
-    color: #a32f2f;
-    margin-bottom: 50px;
-}
-
-.shop h4 {
-    color: #a32f2f;
-    margin: 50px 0;
-}
-
-.shop-p {
-    font-size: 1.1em;
-    line-height: 28px;
-}
-
-.shop-section-img {
-    width: 800px;
-    height: 350px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-}
-
-.shop-section-img img {
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-}
-
-.shop-section-img-margin {
-    margin-top: 200px;
-}
-
-.sub-image-info {
+.shop-carousel {
     display: flex;
     justify-content: space-between;
-    margin: 5px 10px;
-    color: #a32f2f;
-    font-size: 1.2em;
+}
+
+.shop-carousel img {
+    margin: 50px 0px;
+    height: 250px;
+}
+
+.shop-collection {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.shop-collection-carousel {
+    flex: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-collection-carousel img {
+    height: 250px;
+}
+
+.shop-collection span {
+    flex: 10%;
+}
+
+.shop-collection-description {
+    flex: 35%;
+}
+
+.shop-collection-description h3 {
+    font-size: 1.3em;
+    margin: 50px 0px;
+}
+
+.shop-collection-description p {
+    line-height: 24px;
 }
