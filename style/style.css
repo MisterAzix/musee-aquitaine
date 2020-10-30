@@ -42,9 +42,9 @@ body {
     position: absolute;
     bottom: 7%;
     left: 50%;
-    height: 30px;
+    height: 25px;
     transform: translate(-50%);
-    animation: bounceAnim 1s infinite;
+    animation: bounceAnim 2s infinite;
 }
 
 @keyframes bounceAnim {
