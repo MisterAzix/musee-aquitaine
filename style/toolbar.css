@@ -2,6 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
 
 
+/*==================== SCROLLBAR ====================*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #759fbc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #002944;
+}
+
+
 /*==================== TOOLBAR ====================*/
 /** {
     margin: 0px;
